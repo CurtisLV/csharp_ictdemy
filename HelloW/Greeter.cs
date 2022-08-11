@@ -8,9 +8,10 @@ namespace HelloW
 {
     internal class Greeter
     {
-        public void Greet(string name = "World")
+        public string? text;
+        public string Greet(string name = "World")
         {
-            Console.WriteLine($"Hello, {name}!");
+            return $"{text}, {name}!";
         }
     }
 }
