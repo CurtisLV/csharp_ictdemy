@@ -11,4 +11,4 @@ CalculatorLogic calc = new CalculatorLogic(num1, num2);
 Console.WriteLine($"Sum: {calc.Sum()}");
 Console.WriteLine($"Difference: {calc.Difference()}");
 Console.WriteLine($"Product: {calc.Product()}");
-Console.WriteLine($"Quotient: {calc.Quotient()}");
+Console.WriteLine($"Quotien: {calc.Quotien()}");

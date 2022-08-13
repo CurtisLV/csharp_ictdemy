@@ -31,23 +31,9 @@ namespace Calculator
             return (num1 * num2);  
         }
 
-        public double Quotient()
+        public double Quotien()
         {
             return num1 / num2; 
         }
-
-        //public double Num1
-        //{
-        //    get; set; 
-        //}
-        //public double Num2
-        //{
-        //    get; set;
-        //}
-
-
-
-
-
     }
 }
