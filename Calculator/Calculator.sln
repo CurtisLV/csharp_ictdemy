@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TruckUnloading", "..\TruckUnloading\TruckUnloading.csproj", "{B435F35D-08D3-46E3-A933-652CF502D540}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Friends", "..\Friends\Friends.csproj", "{B4CD4654-885F-483F-ADD4-ABF23C6B824F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B435F35D-08D3-46E3-A933-652CF502D540}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B435F35D-08D3-46E3-A933-652CF502D540}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B435F35D-08D3-46E3-A933-652CF502D540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4CD4654-885F-483F-ADD4-ABF23C6B824F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4CD4654-885F-483F-ADD4-ABF23C6B824F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4CD4654-885F-483F-ADD4-ABF23C6B824F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4CD4654-885F-483F-ADD4-ABF23C6B824F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

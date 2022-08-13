@@ -14,6 +14,6 @@ internal class Person
 
     public void Introduce()
     {
-        Console.WriteLine($"Hi, my name is {name}, I'm {age} years old and my friend is {friend}");
+        Console.WriteLine($"Hi, my name is {name}, I'm {age} years old and my friend is {friend.name}");
     }
 }
