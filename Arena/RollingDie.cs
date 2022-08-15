@@ -12,4 +12,22 @@ internal class RollingDie
 {
     private Random random;
     private int sidesCount;
+
+    public RollingDie(int iSidesCount)
+    {
+        sidesCount = iSidesCount;
+        random = new Random();
+    }    
+    public RollingDie()
+    {
+        sidesCount = 6;
+        random = new Random();
+    }
+
+    public int GetSidesCount()
+    {
+        return sidesCount;
+    }
+
+
 }
