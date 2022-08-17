@@ -8,11 +8,11 @@ namespace SentenceGenerator;
 
 internal class SentenceGen
 {
-    private string[] attributes = {"best", "thin", "big", "best", "blue"};
-    private string[] subjects = {"T-rex", "dog", "spider", "bird", "scripter"};
-    private string[] adverbs = {"learns", "likes", "wants", "loves", "goes"};
-    private string[] verbs = {"to cook", "to sleep", "to lay", "to clean", "to hug"};
-    private string[] advPlace = {"on the table", "in the woods", "under the desk", "at grandma's", "at work"};
+    private string[] attributes = { "blue", "big", "thin", "best", "automatic" };
+    private string[] subjects = { "unicorn", "programmer", "manager", "hippopotamus", "T-rex" };
+    private string[] adverbs = { "goes to", "likes to", "loves to", "learns to", "wants to" };
+    private string[] verbs = { "sleep", "lay", "cook", "clean", "play" };
+    private string[] advPlace = {"on the table", "in the forest", "under the desk", "at grandma's", "at work"};
 
     Random rand = new Random();
 
