@@ -19,8 +19,8 @@ internal class SentenceGen
     private string RandWord(string[] array)
     {
         int index = rand.Next(array.Length);
-        string word = array[index];
-        return word;
+        string words = array[index];
+        return words;
     }
 
     public string Generate()
