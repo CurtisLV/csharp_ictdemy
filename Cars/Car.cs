@@ -17,7 +17,7 @@ internal class Car
         this.color = color;
 
     }
-
+ 
     public string GetLincesePlate()
     {
         return licensePlate;
