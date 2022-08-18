@@ -10,7 +10,7 @@ internal class Garage
 {
     private Car car;
 
-    public void Put()
+    public void Put(Car car)
     {
         this.car = car;
     }
