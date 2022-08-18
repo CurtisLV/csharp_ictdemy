@@ -9,5 +9,12 @@ namespace HumanWithDog;
 internal class Human
 {
     private string name;
-    private Dog dog;
+    public Dog dog;
+
+    public Human(string name, Dog dog)
+    {
+        this.name = name;
+        this.dog = dog;
+    }
+
 }

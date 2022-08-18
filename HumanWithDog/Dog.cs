@@ -9,16 +9,20 @@ namespace HumanWithDog;
 internal class Dog
 {
     private string name;
-    private int age;
+    private int age = 1;
 
-    public Dog(string name, int age)
+    public Dog(string name)
     {
         this.name = name;
-        this.age = age;
     }
 
-    public void Age()
+    public void GetOlder()
     {
         this.age++;
+    }
+
+    public override string ToString()
+    {
+        return $"{name} ({age} years)";
     }
 }
