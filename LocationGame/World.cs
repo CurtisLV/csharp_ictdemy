@@ -38,5 +38,50 @@ internal class World
 
     }
 
+    public void ProcessCommand(string command)
+    {
+        // command to lower
+        command = command.ToLower();
+        // if starts with go, check if ends with correct
+        if (command.StartsWith("go"))
+        {
+            // if currentLocation.side != null
+            if (command.EndsWith("north") && currentLocation.north != null)
+            {
+                currentLocation = currentLocation.north;
+            }
+            else if (command.EndsWith("east") && currentLocation.east != null)
+            {
+                currentLocation = currentLocation.east;
+            }
+            else if (command.EndsWith("south") && currentLocation.south != null)
+            {
+                currentLocation = currentLocation.south;
+            }
+            else if (command.EndsWith("west") && currentLocation.west != null)
+            {
+                currentLocation = currentLocation.west;
+            }
+            else
+            {
+                Console.WriteLine("You can't go this way.");
+            }
+        }
+        else if (command != "end")
+        {
+            // else dont recognize the command
+            Console.WriteLine("I cannot recognize this command.");
+        }
+
+
+
+    }
+
+
+        public Location ReturnCurrentLocation()
+    {
+        return currentLocation;
+    }
+
 
 }
