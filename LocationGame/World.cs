@@ -61,7 +61,7 @@ internal class World
             else if (command.EndsWith("west") && currentLocation.west != null)
             {
                 currentLocation = currentLocation.west;
-            }
+            } 
             else
             {
                 Console.WriteLine("You can't go this way.");
