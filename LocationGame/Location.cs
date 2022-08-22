@@ -21,4 +21,32 @@ internal class Location
         this.name = name;
         this.description = description;
     }
+
+    public override string ToString()
+    {
+        string output = name + "\n";
+        output += description + "\n\n";
+        string directions = "";
+        if (north != null)
+        {
+            directions += "go north\n";
+        }         
+        if (east != null)
+        {
+            directions += "go east\n";
+        }         
+        if (south != null)
+        {
+            directions += "go south\n";
+        }         
+        if (west != null)
+        {
+            directions += "go west\n";
+        }
+        if (directions != null)
+        {
+            output += "You can: \n" + directions + "\n";
+        }
+        return output;
+    }
 }
