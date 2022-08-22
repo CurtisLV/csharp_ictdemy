@@ -22,10 +22,10 @@ internal class World
 
         // link all locations
         castle.east = forest1;
-        forest1.east = forest2;
         forest1.west = castle;
-        forest2.east = forest1;
-        forest2.west = forest3;
+        forest1.east = forest2;
+        forest2.west = forest1; 
+        forest2.east = forest3;
         forest2.south = forest4;
         forest3.west = forest2;
         forest3.east = pond;
@@ -64,7 +64,7 @@ internal class World
             } 
             else
             {
-                Console.WriteLine("You can't go this way.");
+                Console.WriteLine("You cannot go this way.");
             }
         }
         else if (command != "end")
