@@ -57,7 +57,7 @@ internal class Warrior
     {
         string s = "[";
         int total = 20;
-        double count = Math.Roung(((double)health / maxHealth) * total);
+        double count = Math.Round(((double)health / maxHealth) * total);
         if ((count == 0) && Alive()) // because everything below 2.5% health would be rounded to 0
         {
             count = 1;
@@ -72,6 +72,25 @@ internal class Warrior
         return s;
     }
 
+
+    public void Defend(int hit)
+    {
+        int injury = hit - (defense + die.Roll());
+        if (injury > 0)
+        {
+            health -= injury;
+            if (health <= 0)
+            {
+                health = 0;
+            }
+        }
+    }
+
+    public void Attack(Warrior enemy)
+    {
+        int hit = damage + die.Roll();
+        enemy.Defend(hit);
+    }
 
 
 
