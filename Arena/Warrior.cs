@@ -62,7 +62,16 @@ internal class Warrior
         {
             count = 1;
         }
+        for (int i = 0; i < count; i++)
+        {
+            s += "#";
+        }
+        s = s.PadRight(total + 1);
+        s += "]";
+        
+        return s;
     }
+
 
 
 
