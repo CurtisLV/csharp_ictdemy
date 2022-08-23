@@ -15,4 +15,15 @@ internal class FamTree
     {
         this.root = root;
     }
+
+    public void PrintPersonAndAncestor(Person person)
+    {
+        if (person != null)
+        {
+            Console.WriteLine(person);
+            PrintPersonAndAncestor(person.father);
+            PrintPersonAndAncestor(person.mother);
+
+        }
+    }
 }

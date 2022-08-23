@@ -9,8 +9,8 @@ namespace FamilyTree;
 internal class Person
 {
     private string name;
-    private Person mother;
-    private Person father;
+    public Person mother;
+    public Person father;
 
     public Person(string name, Person mother, Person father)
     {
