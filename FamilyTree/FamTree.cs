@@ -23,7 +23,12 @@ internal class FamTree
             Console.WriteLine(person);
             PrintPersonAndAncestor(person.father);
             PrintPersonAndAncestor(person.mother);
-
         }
+    }
+
+    public void Print()
+    {
+        Console.WriteLine($"Family tree for {root}");
+        PrintPersonAndAncestor(root);
     }
 }

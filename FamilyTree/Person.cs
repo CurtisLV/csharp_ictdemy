@@ -12,7 +12,7 @@ internal class Person
     public Person mother;
     public Person father;
 
-    public Person(string name, Person mother, Person father)
+    public Person(string name, Person father, Person mother)
     {
         this.name = name;
         this.mother = mother;
