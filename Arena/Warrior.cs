@@ -33,6 +33,8 @@ internal class Warrior
     /// </summary>
     private RollingDie die;
 
+    private string message;
+
     public Warrior(string name, int health, int damage, int defense, RollingDie die)
     {
         this.name = name;
@@ -79,20 +81,38 @@ internal class Warrior
         if (injury > 0)
         {
             health -= injury;
+            message = $"{name} defended against the attack but still lost {injury} HP";
             if (health <= 0)
             {
                 health = 0;
+                message += " and died";
             }
+
         }
+        else
+        {
+            message += $"{name} blocked the hit";
+        }
+
+        SetMessage(message);
     }
 
     public void Attack(Warrior enemy)
     {
         int hit = damage + die.Roll();
+        SetMessage($"{name} attacks with a hit worth {hit} HP");
         enemy.Defend(hit);
     }
 
+    private void SetMessage(string message)
+    {
+        this.message = message;
+    }
 
+    public string GetLastMessage()
+    {
+        return message;
+    }
 
 
 }

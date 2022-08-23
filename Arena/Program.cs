@@ -29,3 +29,17 @@ Console.WriteLine($"Warrior is live: {warrior.Alive()}");
 
 // test HealthBar()
 Console.WriteLine($"Warrior's health bar: {warrior.HealthBar()}");
+
+//// test Attack()
+//warrior.Attack(warrior);
+
+
+
+Warrior enemy = new Warrior("Shadow", 60, 18, 15, die);
+enemy.Attack(warrior);
+
+Console.WriteLine(enemy.GetLastMessage());
+Console.WriteLine(warrior.GetLastMessage());
+
+Console.WriteLine($"Health after the hit {warrior.HealthBar()}");
+
