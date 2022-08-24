@@ -57,24 +57,29 @@ internal class Arena
         }
 
 
-
+        Console.WriteLine($"{w1} goes first!");
         Console.WriteLine("Let the battle begin...");
         Console.ReadKey();
 
 
-        while (warrior1.Alive() && warrior2.Alive())
+        while (w1.Alive() && w2.Alive())
         {
-            warrior1.Attack(warrior2);
+            w1.Attack(w2);
             Render();
 
-            PrintMessage(warrior1.GetLastMessage()); // attack message
-            PrintMessage(warrior2.GetLastMessage()); // defence message
+            PrintMessage(w1.GetLastMessage()); // attack message
+            PrintMessage(w2.GetLastMessage()); // defence message
 
-            warrior2.Attack(warrior1);
-            Render();
 
-            PrintMessage(warrior1.GetLastMessage());
-            PrintMessage(warrior2.GetLastMessage());
+            if (w2.Alive())
+            {
+                w2.Attack(w1);
+                Render();
+
+                PrintMessage(w2.GetLastMessage());
+                PrintMessage(w1.GetLastMessage());
+
+            }
 
             Console.WriteLine();
 
