@@ -33,8 +33,6 @@ Console.WriteLine($"Warrior's health bar: {warrior.HealthBar()}");
 //// test Attack()
 //warrior.Attack(warrior);
 
-
-
 Warrior enemy = new Warrior("Shadow", 60, 18, 15, die);
 enemy.Attack(warrior);
 
