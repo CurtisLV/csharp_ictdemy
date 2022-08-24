@@ -40,8 +40,24 @@ internal class Arena
 
     public void Fight()
     {
+
+        Warrior w1 = warrior1;
+        Warrior w2 = warrior2;
+
         Console.WriteLine("Welcome to the Arena!");
         Console.WriteLine($"Today {warrior1} will battle against {warrior2}! \n");
+
+        bool warriorToStart = (die.Roll() <= die.GetSidesCount() / 2);
+
+        if (warriorToStart)
+        {
+            // switching places
+            w1 = warrior2;
+            w2 = warrior1;
+        }
+
+
+
         Console.WriteLine("Let the battle begin...");
         Console.ReadKey();
 

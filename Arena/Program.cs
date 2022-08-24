@@ -9,3 +9,4 @@ Arena.Arena arena = new Arena.Arena(karlis, shadow, die);
 
 arena.Fight();
 
+Console.ReadKey();
