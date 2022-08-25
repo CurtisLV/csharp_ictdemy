@@ -87,5 +87,18 @@ internal class Arena
 
     }
 
+    private void PrintWarrior(Warrior w)
+    {
+        Console.WriteLine(w);
+        Console.Write("Health: ");
+        Console.WriteLine(w.HealthBar());
+
+        if (w is Mage)
+        {
+            Console.Write("Mana: ");
+            Console.WriteLine(((Mage)w).ManaBar());
+        }
+    }
+
 
 }

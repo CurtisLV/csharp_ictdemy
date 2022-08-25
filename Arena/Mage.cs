@@ -32,7 +32,7 @@ internal class Mage: Warrior
             {
                 mana = maxMana;
             }
-            base.Attack(enemy); // if we are not using mana, we just use Base's Attack method
+            base.Attack(enemy); // if we are not using mana, we just use Base's Attack method 
         } else // Magic damage
         {
             hit = magicDamage + die.Roll();
@@ -42,6 +42,11 @@ internal class Mage: Warrior
         }
         
 
+    }
+
+    public string ManaBar()
+    {
+        return GraphicalBar(mana, maxMana);
     }
 
 
