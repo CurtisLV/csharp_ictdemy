@@ -8,10 +8,8 @@ namespace Arena;
 
 internal class Mage: Warrior
 {
-    private int Mana;
+    private int mana;
     private int maxMana;
     private int magicDefence;
-
-
 
 }

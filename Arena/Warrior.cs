@@ -11,27 +11,27 @@ internal class Warrior
     /// <summary>
     /// Warrior's name
     /// </summary>
-    private string name;
+    protected string name;
     /// <summary>
     /// Health in HP
     /// </summary>
-    private int health;
+    protected int health;
     /// <summary>
     /// Max health in HP
     /// </summary>
-    private int maxHealth;
+    protected int maxHealth;
     /// <summary>
     ///  Damage in HP
     /// </summary>
-    private int damage;
+    protected int damage;
     /// <summary>
     /// Defense in HP
     /// </summary>
-    private int defense;
+    protected int defense;
     /// <summary>
     /// Rolling dice instance
     /// </summary>
-    private RollingDie die;
+    protected RollingDie die;
 
     private string message;
 
