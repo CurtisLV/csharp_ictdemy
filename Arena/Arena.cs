@@ -23,8 +23,11 @@ internal class Arena
 
     private void Render()
     {
+
+        string ascii = "\r\n      __        _______     _______   _____  ___         __      \r\n     /\"\"\\      /\"      \\   /\"     \"| (\\\"   \\|\"  \\       /\"\"\\     \r\n    /    \\    |:        | (: ______) |.\\\\   \\    |     /    \\    \r\n   /' /\\  \\   |_____/   )  \\/    |   |: \\.   \\\\  |    /' /\\  \\   \r\n  //  __'  \\   //      /   // ___)_  |.  \\    \\. |   //  __'  \\  \r\n /   /  \\\\  \\ |:  __   \\  (:      \"| |    \\    \\ |  /   /  \\\\  \\ \r\n(___/    \\___)|__|  \\___)  \\_______)  \\___|\\____\\) (___/    \\___)\r\n                                                                 \r\n";
+
         Console.Clear();
-        Console.WriteLine("-------------- Arena -------------- \n");
+        Console.WriteLine($"{ascii} \n");
         Console.WriteLine("Warriors health: \n");
 
         PrintWarrior(warrior1);
@@ -94,12 +97,18 @@ internal class Arena
     {
         Console.WriteLine(w);
         Console.Write("Health: ");
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
         Console.WriteLine(w.HealthBar());
+        Console.ResetColor();
 
         if (w is Mage)
         {
-            Console.Write("Mana: ");
+            Console.Write("Mana:   ");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine(((Mage)w).ManaBar());
+            Console.ResetColor();
         }
     }
 
