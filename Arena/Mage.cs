@@ -12,10 +12,15 @@ internal class Mage: Warrior
     private int maxMana;
     private int magicDefence;
 
-    public Mage(string name, int health, int damage, int defense, RollingDie die, int mana, int maxMana, int magicDefence): base(name, health, damage, defense, die)
+    public Mage(string name, int health, int damage, int defense, RollingDie die, int mana, int magicDefence): base(name, health, damage, defense, die)
     {
         this.mana = mana;
-        this.maxMana = maxMana;
+        this.maxMana = mana;
         this.magicDefence = magicDefence;
     }
+
+
+
+
+
 }

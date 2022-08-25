@@ -97,14 +97,14 @@ internal class Warrior
         SetMessage(message);
     }
 
-    public void Attack(Warrior enemy)
+    public virtual void Attack(Warrior enemy)
     {
         int hit = damage + die.Roll();
         SetMessage($"{name} attacks with a hit worth {hit} HP");
         enemy.Defend(hit);
     }
 
-    private void SetMessage(string message)
+    protected void SetMessage(string message)
     {
         this.message = message;
     }
