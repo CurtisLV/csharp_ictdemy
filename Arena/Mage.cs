@@ -32,15 +32,15 @@ internal class Mage: Warrior
             {
                 mana = maxMana;
             }
-            hit = damage + die.Roll();
-            SetMessage($"{name} attacks with a hit worth {hit} HP");
-        } else // Magic defense
+            base.Attack(enemy); // if we are not using mana, we just use Base's Attack method
+        } else // Magic damage
         {
             hit = magicDamage + die.Roll();
             SetMessage($"{name} attacks with a hit worth {hit} HP");
+            enemy.Defend(hit);
             mana = 0;
         }
-        enemy.Defend(hit);
+        
 
     }
 
