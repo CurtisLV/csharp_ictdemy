@@ -55,11 +55,11 @@ internal class Warrior
         return (health > 0);
     }
 
-    public string HealthBar()
+    public string GraphicalBar(int current, int maximum)
     {
         string s = "[";
         int total = 20;
-        double count = Math.Round(((double)health / maxHealth) * total);
+        double count = Math.Round(((double)current / maximum) * total);
         if ((count == 0) && Alive()) // because everything below 2.5% health would be rounded to 0
         {
             count = 1;
@@ -72,6 +72,11 @@ internal class Warrior
         s += "]";
         
         return s;
+    }
+
+    public string HealthBar()
+    {
+        return GraphicalBar(health, maxHealth);
     }
 
 
