@@ -26,8 +26,11 @@ internal class Arena
         Console.Clear();
         Console.WriteLine("-------------- Arena -------------- \n");
         Console.WriteLine("Warriors health: \n");
-        Console.WriteLine($"{warrior1} {warrior1.HealthBar()}");
-        Console.WriteLine($"{warrior2} {warrior2.HealthBar()}");
+
+        PrintWarrior(warrior1);
+        Console.WriteLine();
+        PrintWarrior(warrior2);
+        Console.WriteLine();
    
     }
 
