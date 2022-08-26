@@ -8,9 +8,9 @@ namespace HumanRun;
 
 internal class Human
 {
-    private string name;
-    public int age;
-    private int tiredness = 0;
+    protected string name;
+    protected int age;
+    protected int tiredness = 0;
 
     public Human(string name, int age)
     {
