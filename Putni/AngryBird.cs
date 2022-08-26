@@ -25,7 +25,7 @@ internal class AngryBird: Bird
 
     public override string ToString()
     {
-        return $"I'm a bird with a weight of {weight} and a hunger level of {hunger}, and an anger level of {anger}.";
+        return $"I'm an angry-bird with a weight of {weight} and a hunger level of {hunger}, and an anger level of {anger}.";
     }
 
 
