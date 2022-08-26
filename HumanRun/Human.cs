@@ -22,7 +22,7 @@ internal class Human
     {
        if (tiredness + distance > 20)
         {
-            Console.WriteLine("I'm too tired!");
+            Console.WriteLine("I'm too tired");
         } else 
         {
             tiredness = tiredness + distance;
