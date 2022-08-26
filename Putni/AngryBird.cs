@@ -10,10 +10,6 @@ internal class AngryBird: Bird
 {
     private int anger = 50;
 
-    public AngryBird(int hunger, int weight, int anger): base(hunger, weight)
-    {
-        this.anger = anger;
-    }
 
     public void Provoke(int infuriation)
     {
