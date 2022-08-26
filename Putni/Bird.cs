@@ -8,14 +8,8 @@ namespace Putni;
 
 internal class Bird
 {
-    protected int hunger;
-    protected int weight;
-
-    public Bird(int hunger, int weight)
-    {
-        this.hunger = hunger;
-        this.weight = weight;
-    }
+    protected int hunger = 100;
+    protected int weight = 50;
 
     public void Eat(int foodWeight)
     {
@@ -26,5 +20,10 @@ internal class Bird
         }
 
         weight += foodWeight;
+    }
+
+    public override string ToString()
+    {
+        return $"I'm a bird with a weight of {weight} and a hunger level of {hunger}.";
     }
 }
