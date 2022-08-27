@@ -14,4 +14,9 @@ internal class Shape
     {
         this.color = color;
     }
+
+    public virtual double Area()
+    {
+        return 0;
+    }
 }
