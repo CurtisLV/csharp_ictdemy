@@ -4,9 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactorySweets
+namespace FactorySweets;
+
+internal class SweetsFactory
 {
-    internal class SweetsFactory
+
+
+    public static Sweets CreateBanana()
     {
+        return new Sweet()
+        {
+
+        }
     }
+
 }
