@@ -21,6 +21,6 @@ internal class Sweet
 
     public override string ToString()
     {
-        return $"A {shape}, {color} candy that weights {weight}g";
+        return $"A {shape}, {color} candy that weighs {weight}g";
     }
 }
