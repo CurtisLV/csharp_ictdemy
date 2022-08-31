@@ -8,4 +8,13 @@ if (birthdate.Date > today.AddYears(age))
     age--;
 }
 
-Console.WriteLine($"You're {age} years old and your birthday is coming up in {} days.");
+DateTime next = birthdate.AddYears(age);
+
+if (next < today)
+{
+    next = next.AddYears(1);
+}
+
+int numDays = (next - today).Days;
+
+Console.WriteLine($"You're {age} years old and your birthday is coming up in {numDays} days.");
