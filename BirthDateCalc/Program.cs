@@ -1,20 +1,7 @@
-﻿Console.WriteLine("Enter your birth date: ");
-DateTime birthdate = DateTime.Parse(Console.ReadLine());
-DateTime today = DateTime.Today;
+﻿using BirthDateCalc;
 
-int age = today.Year - birthdate.Year;
-if (birthdate.Date > today.AddYears(age))
-{
-    age--;
-}
+Console.WriteLine("Enter your birth date: ");
 
-DateTime next = birthdate.AddYears(age);
+Person user = new Person(DateTime.Parse(Console.ReadLine()));
 
-if (next < today)
-{
-    next = next.AddYears(1);
-}
-
-int numDays = (next - today).Days;
-
-Console.WriteLine($"You're {age} years old and your birthday is coming up in {numDays} days.");
+Console.WriteLine($"You're {user.GetAge()} years old and your birthday is coming up in {user.GetDaysToBirthday()} days.");
