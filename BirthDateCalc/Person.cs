@@ -22,7 +22,7 @@ internal class Person
     {
         DateTime today = DateTime.Today;
         int age = today.Year - BirthDate.Year;
-        if (BirthDate.Date > today.AddYears(age))
+        if (today < BirthDate.AddYears(age))
         {
             age--;
         }
