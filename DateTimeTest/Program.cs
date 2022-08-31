@@ -21,3 +21,15 @@ Console.WriteLine($"{dateTime2.DayOfWeek}, {dateTime2.DayOfYear}");
 
 // Adding days /and other time units
 Console.WriteLine(dateTime2.AddDays(50));
+Console.WriteLine(dateTime2.IsDaylightSavingTime());
+Console.WriteLine(DateTime.IsLeapYear(dateTime2.Year - 2));
+
+
+
+// Parsing and converting to string
+DateTime date = DateTime.Parse(Console.ReadLine());
+Console.WriteLine(date);
+string pattern = "dd/MM/yyyy";
+DateTime date2 = DateTime.ParseExact(Console.ReadLine(), pattern, null);
+Console.WriteLine(date2);
+dateTime2.ToString("dd MMMM, yyyy");
