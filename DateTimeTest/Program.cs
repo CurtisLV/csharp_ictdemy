@@ -1,4 +1,6 @@
 ﻿
+using System.Security.Cryptography.X509Certificates;
+
 DateTime dateTime = new DateTime();
 Console.WriteLine(dateTime);
 
@@ -33,3 +35,17 @@ string pattern = "dd/MM/yyyy";
 DateTime date2 = DateTime.ParseExact(Console.ReadLine(), pattern, null);
 Console.WriteLine(date2);
 dateTime2.ToString("dd MMMM, yyyy");
+
+int x = 0;
+DateTime start = DateTime.Now;
+
+for (int i = 0; i < 1000000; i++)
+{
+    x++;
+}
+
+DateTime end = DateTime.Now;
+
+TimeSpan ts = (end - start);
+Console.WriteLine(ts.ToString());
+
