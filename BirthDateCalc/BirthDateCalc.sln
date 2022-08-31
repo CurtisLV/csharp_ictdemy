@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirthDateCalc", "BirthDateCalc.csproj", "{403CBD03-DA3A-415B-9E2E-89F91A3F27CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{403CBD03-DA3A-415B-9E2E-89F91A3F27CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{403CBD03-DA3A-415B-9E2E-89F91A3F27CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{403CBD03-DA3A-415B-9E2E-89F91A3F27CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{403CBD03-DA3A-415B-9E2E-89F91A3F27CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8B83CA2-EECB-485C-B58E-6753A680CC25}
+	EndGlobalSection
+EndGlobal
