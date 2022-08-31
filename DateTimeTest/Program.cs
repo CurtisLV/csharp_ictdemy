@@ -49,3 +49,13 @@ DateTime end = DateTime.Now;
 TimeSpan ts = (end - start);
 Console.WriteLine(ts.ToString());
 
+
+// Small app - tells how old and how much in days/hours
+
+Console.WriteLine("Enter your date of birth: ");
+DateTime born = DateTime.Parse(Console.ReadLine());
+TimeSpan age = DateTime.Today - born;
+Console.WriteLine($"You are {Math.Floor(age.Days / 365.255)} years old");
+Console.WriteLine($"You are {age.TotalDays} days or {age.TotalHours} hours old");
+Console.ReadKey();
+
