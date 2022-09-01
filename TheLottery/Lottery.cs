@@ -17,7 +17,6 @@ internal class Lottery
         numbers = new List<int>();
     }
 
-
     public int Lot()
     {
         int number = random.Next(100) + 1;

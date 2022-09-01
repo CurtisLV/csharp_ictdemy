@@ -1,7 +1,5 @@
 ﻿using TheLottery;
 
-
-
 Lottery lottery = new Lottery();
 Console.WriteLine("Welcome to our lottery program.");
 
