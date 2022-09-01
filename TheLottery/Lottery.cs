@@ -9,4 +9,11 @@ namespace TheLottery;
 internal class Lottery
 {
     private List<int> numbers;
+    private Random random;
+
+    public Lottery()
+    {
+        random = new Random();
+        numbers = new List<int>();
+    }
 }
