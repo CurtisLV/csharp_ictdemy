@@ -72,4 +72,19 @@ internal class DiaryC
         DateTime dateTime = ReadDateTime();
         database.DeleteEntries(dateTime);
     }
+
+    public void PrintHomeScreen()
+    {
+        Console.Clear();
+        Console.WriteLine("Welcome to your virtual diary!");
+        Console.WriteLine($"Today is: {DateTime.Now}");
+        Console.WriteLine();
+
+        Console.WriteLine("Today:\n------");
+        PrintEntries(DateTime.Today);
+        Console.WriteLine();
+        Console.WriteLine("Tomorrow:\n------");
+        PrintEntries(DateTime.Now.AddDays(1));
+        Console.WriteLine();
+    }
 }
