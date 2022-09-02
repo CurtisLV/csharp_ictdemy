@@ -15,5 +15,25 @@ internal class Database
         entries = new List<Entry>();
     }
 
-  
+    // Methods
+
+    public void AddEntry(DateTime Occur, string text)
+    {
+        entries.Add(new Entry(Occur, text));
+    }
+
+    public List<Entry> FindEntries(DateTime date, bool byTime)
+    {
+        List<Entry> found = new List<Entry>();
+        foreach (Entry entry in entries)
+        {   // Filtered by time and date
+            if (((byTime) && (entry.Occurs == date)) 
+            || 
+            ((!byTime) && (entry.Occurs.Date == date.Date))) 
+            {
+                found.Add(entry);
+            }
+        }
+        return found;
+    }
 }
