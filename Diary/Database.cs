@@ -8,4 +8,12 @@ namespace Diary;
 
 internal class Database
 {
+    private List<Entry> entries;
+
+    public Database()
+    {
+        entries = new List<Entry>();
+    }
+
+  
 }
