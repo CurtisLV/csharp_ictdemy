@@ -43,4 +43,33 @@ internal class DiaryC
         string text = Console.ReadLine(); 
         database.AddEntry(dateTime, text);
     }
+
+    public void SearchEntries()
+    {
+        // entering date
+        DateTime dateTime = ReadDateTime();
+        // searching for entries
+        List<Entry> entries = database.FindEntries(dateTime, false);
+        // printing entries
+        if (entries.Count() > 0)
+        {
+            Console.WriteLine("Entries found:");
+            foreach (Entry entry in entries)
+            {
+                Console.WriteLine(entry);
+            }
+        }
+        else
+        {
+            Console.WriteLine("Nothing found");
+        }
+
+    }
+
+    public void DeleteEntries()
+    {
+        Console.WriteLine("Entries with the same exact date and time will be deleted");
+        DateTime dateTime = ReadDateTime();
+        database.DeleteEntries(dateTime);
+    }
 }
