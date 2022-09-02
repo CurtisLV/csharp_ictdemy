@@ -25,6 +25,22 @@ internal class DiaryC
             Console.WriteLine("Error. Please try again: ");
         }
         return dateTime;
+    }
 
+    public void PrintEntries(DateTime day)
+    {
+        List<Entry> entries = database.FindEntries(day, false);
+        foreach (Entry entry in entries)
+        {
+            Console.WriteLine(entry);
+        }
+    }
+
+    public void AddEntry()
+    {
+        DateTime dateTime = ReadDateTime();
+        Console.WriteLine("Enter the entry text:");
+        string text = Console.ReadLine(); 
+        database.AddEntry(dateTime, text);
     }
 }
