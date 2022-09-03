@@ -1,7 +1,5 @@
 ﻿List<string> words = new List<string>();
-
-Console.WriteLine("Enter a word: ");
-string answer = Console.ReadLine().ToLower();
+string answer = "";
 
 while (answer != "end") 
 {
@@ -16,5 +14,5 @@ while (answer != "end")
 Console.WriteLine("You've entered the following words: ");
 foreach (string word in words) 
 {
-
+    Console.Write(word + ", ");
 }
