@@ -8,19 +8,18 @@ namespace CarDealership;
 
 internal class Dealership
 {
-    private string Address
-    {
+    private string Address {
         get; set;
     }
-    private int Money
-    {
+    private string City {
+        get; set;
+    }
+    private int Money {
         get; set;
     }
 
-    public int CarCount
-    {
-        get
-        {
+    public int CarCount{
+        get {
             return cars.Count;
         }
     }
