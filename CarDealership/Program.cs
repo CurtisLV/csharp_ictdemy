@@ -16,3 +16,11 @@ carDealership.AddCar(tatra);
 carDealership.AddCar(renault);
 
 // Print statistics
+
+//There are 5 cars in the car dealership
+//The car dealers have 174000 Eur
+//Total price of the cars is 326000 Eur
+
+Console.WriteLine($"There are {carDealership.CarCount} cars in the car dealership");
+Console.WriteLine($"The car dealers have {carDealership.Money} Eur");
+Console.WriteLine($"Total price of the cars is {carDealership.TotalCarValue()} Eur");

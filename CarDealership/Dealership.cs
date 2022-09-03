@@ -15,8 +15,8 @@ internal class Dealership
     private string City {
         get; set;
     }
-    private int Money {
-        get; set;
+    public int Money {
+        get; private set;
     }
 
     public int CarCount{
