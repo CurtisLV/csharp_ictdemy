@@ -9,14 +9,14 @@ namespace CarDealership;
 internal class Car
 {
     private string LicensePlate {
-        get; set; 
-    }
-
-    private string Brand {
         get; set;
     }
 
-    private int Price {
+    private string Brand {
+        get;
+    }
+
+    public int Price {
         get; set;
     }
 

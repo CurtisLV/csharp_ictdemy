@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,4 +32,30 @@ internal class Dealership
         Address = address;
         Money = money;
     }
+
+    public void AddCar(Car car)
+    {
+        cars.Add(car);
+    }
+
+    public void SellCar(Car car)
+    {
+        if (car != null && cars.Count > 0)
+        {
+            Money += car.Price;
+            cars.Remove(car);
+        }  
+    }
+
+    public int TotalCarValue()
+    {
+        int total = 0;
+        foreach (Car car in cars)
+        {
+            total += car.Price;
+        }
+        return total;
+    }
+
+
 }
