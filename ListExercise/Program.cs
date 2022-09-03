@@ -13,8 +13,4 @@ while (answer != "end")
 
 words = words.Distinct().ToList();
 
-Console.WriteLine("You've entered the following words: ");
-foreach (string word in words) 
-{
-    Console.Write(word + ", ");
-}
+Console.WriteLine($"You've entered the following words: {String.Join(", ", words)}");
