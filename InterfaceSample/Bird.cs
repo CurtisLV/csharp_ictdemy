@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceSample;
 
-internal class Bird
+internal class Bird: IBird
 {
     public void Chirp()
     {

@@ -1,3 +1,3 @@
 ﻿using InterfaceSample;
 
-Bird bird = new Bird();
+IBird bird = new Bird();
