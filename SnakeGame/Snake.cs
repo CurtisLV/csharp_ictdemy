@@ -8,4 +8,8 @@ namespace SnakeGame;
 
 internal class Snake
 {
+
+    public bool IsAlive {
+        get; set;
+    }
 }
