@@ -6,6 +6,20 @@ using System.Threading.Tasks;
 
 namespace InterfaceSample;
 
-internal class Pterodactyl
+internal class Pterodactyl : ILizard, IBird
 {
+    public void Breathe()
+    {
+        Console.WriteLine("I'm crawling...");
+    }
+
+    public void Chirp()
+    {
+        Console.WriteLine("I'm breathing...");
+    }
+
+    public void Crawl()
+    {
+        Console.WriteLine("♫ ♫♫ ♫ ♫ ♫♫");
+    }
 }
