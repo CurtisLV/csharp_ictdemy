@@ -23,4 +23,21 @@ internal class Block
         Y = y;
         Color = color;
     }
+
+    public void Draw()
+    {
+        if (!OutOfConsole)
+        {
+            Console.CursorLeft = X * 2; // To use up less horizontal space, we draw each block as 2 characters
+            Console.CursorTop = Y;
+            Console.ForegroundColor = Color;
+            Console.Write("██");
+        }
+    }
+
+    public bool Collision(Block block)
+    {
+        return (X == block.X && Y == block.Y);
+    }
+
 }
