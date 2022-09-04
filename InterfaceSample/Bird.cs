@@ -4,9 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InterfaceSample
+namespace InterfaceSample;
+
+internal class Bird
 {
-    internal class Bird
+    public void Chirp()
     {
+        Console.WriteLine("♫ ♫ ♫");
     }
+
+    public void Breathe()
+    {
+        Console.WriteLine("Breathing...");
+    }
+
+    public void Peck()
+    {
+        Console.WriteLine("Peck, peck!");
+    }
+
 }
