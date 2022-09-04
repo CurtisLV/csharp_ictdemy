@@ -9,7 +9,14 @@ namespace SnakeGame;
 internal class Snake
 {
 
-    public bool IsAlive {
-        get; set;
-    }
+    private List<Block> parts = new List<Block>();
+
+    public int Direction { get; set; }
+    public bool IsAlive { get; set; }
+
+    private Block food = new Block(0, 0, ConsoleColor.Red);
+
+    Random random = new Random();
+
+    private ConsoleColor color = ConsoleColor.Magenta;
 }
