@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceSample;
 
-internal class Pterodactyl : ILizard, IBird
+internal class Pterodactyl : Animal, ILizard, IBird
 {
     void IBird.Breathe()
     {

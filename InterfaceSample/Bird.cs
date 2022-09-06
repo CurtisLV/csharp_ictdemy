@@ -6,16 +6,11 @@ using System.Threading.Tasks;
 
 namespace InterfaceSample;
 
-internal class Bird: IBird
+internal class Bird: Animal, IBird
 {
     public void Chirp()
     {
         Console.WriteLine("♫ ♫ ♫");
-    }
-
-    public void Breathe()
-    {
-        Console.WriteLine("Breathing...");
     }
 
     public void Peck()
