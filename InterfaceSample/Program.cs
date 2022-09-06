@@ -25,6 +25,11 @@ animals.Add(new Pterodactyl() { Weight = 2 });
 
 foreach (Animal animal in animals)
 {
-   Console.WriteLine(animal);
+    Console.WriteLine(animal);
+    animal.Breathe();
+    if (animal is Dolphin)
+    {
+        ((Dolphin)animal).Jump();
+    }
 }
     
