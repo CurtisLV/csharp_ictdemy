@@ -8,16 +8,6 @@ namespace InterfaceSample;
 
 internal class Pterodactyl : Animal, ILizard, IBird
 {
-    void IBird.Breathe()
-    {
-        Console.WriteLine("Bird breathing sounds...");
-    }
-
-    void ILizard.Breathe()
-    {
-        Console.WriteLine("Lizard breathing sounds...");
-    }
-
     public void Chirp()
     {
         Console.WriteLine("I'm crawling...");
