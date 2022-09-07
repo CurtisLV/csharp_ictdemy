@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceSample;
 
-internal abstract class Animal
+internal abstract class Animal: IComparable 
 {
     public int Weight {
         get; set;
@@ -18,5 +18,19 @@ internal abstract class Animal
     }
 
     public abstract void Move(); // Abstract method
+
+    public int CompareTo(object obj)
+    {
+        Animal other = (Animal)obj;
+        if (this.Weight < other.Weight)
+        {
+            return -1;
+        }
+        if (this.Weight > other.Weight)
+        {
+            return 1;
+        }
+        return 0;
+    }
 
 }
