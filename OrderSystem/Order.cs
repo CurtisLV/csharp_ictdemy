@@ -50,13 +50,29 @@ namespace OrderSystem
             }
         }
 
-        public string Country { get; set; }
+        public string Country {
+            get {
+                return "Czech Republic";
+            }
+        }
 
-        public string[] Products { get; set; }
+        public string[] Products {
+            get {
+                return new string[] { product.Name };
+            }
+        }
 
-        public int[] Quantities { get; set; }
+        public int[] Quantities {
+            get {
+                return new int[] { 1 };
+            }
+        }
 
-        public double[] Prices { get; set; }
+        public double[] Prices {
+            get {
+                return new double[] { product.Price };
+            }
+        }
 
         private Customer customer;
         private Product product;
