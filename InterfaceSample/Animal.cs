@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceSample;
 
-internal class Animal
+internal abstract class Animal
 {
     public int Weight {
         get; set;
