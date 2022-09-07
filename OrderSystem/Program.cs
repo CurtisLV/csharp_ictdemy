@@ -7,3 +7,7 @@ Product product = new Product("ict.social points", "Points to access premium con
 
 
 Order order = new Order(1, product, customer, address, address);
+
+// Create a gateway and pass the order to it
+Gateway gateway = new Gateway();
+gateway.ProcessOrder(order);
