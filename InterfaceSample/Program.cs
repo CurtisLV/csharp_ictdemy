@@ -59,3 +59,16 @@ foreach (Animal animal in animals)
         (animal as Dolphin).Jump();
     }
 }
+
+Lizard lizard = new Lizard() { Weight = 5};
+Bird bird4 = new Bird() { Weight = 1};
+
+Dolphin dolphin3 = new Dolphin() { Weight = 10 };
+Console.WriteLine($"Interbreeding {lizard} and {bird4}");
+Animal hybrid1 = lizard + bird4;
+
+Console.WriteLine($"The result is {hybrid1} with weight {hybrid1.Weight}");
+
+Console.WriteLine($"Interbreeding {lizard} and {dolphin3}");
+Animal hybrid2 = lizard + dolphin3;
+Console.WriteLine($"The result is {hybrid2}");
