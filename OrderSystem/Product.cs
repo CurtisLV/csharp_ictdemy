@@ -13,5 +13,16 @@ namespace OrderSystem
         public string Description { get; set; }
         public int Price { get; set; }
 
+        public Product(string name, string description, int price)
+        {
+            Name = name;
+            Description = description;
+            Price = price;
+        }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }
