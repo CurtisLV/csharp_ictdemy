@@ -12,8 +12,11 @@ internal abstract class Animal
         get; set;
     }
 
-    public void Breathe()
+    virtual public void Breathe()
     {
         Console.WriteLine("Breathing...");
     }
+
+    public abstract void Move(); // Abstract method
+
 }

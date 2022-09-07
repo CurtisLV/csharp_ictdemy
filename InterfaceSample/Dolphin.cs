@@ -14,4 +14,9 @@ internal class Dolphin : Animal
         Console.WriteLine("Dolphin flip!");
     }
 
+    public override void Move()
+    {
+        Console.WriteLine("Swimming...");
+    }
+
 }

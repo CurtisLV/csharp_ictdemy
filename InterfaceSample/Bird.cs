@@ -18,4 +18,9 @@ internal class Bird: Animal, IBird
         Console.WriteLine("Peck, peck!");
     }
 
+    public override void Move()
+    {
+        Console.WriteLine("Flying...");
+    }
+
 }

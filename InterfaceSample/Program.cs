@@ -17,7 +17,7 @@
 
 List<Animal> animals = new List<Animal>();
 
-animals.Add(new Animal()); // doesn't work with Abstract classes
+//animals.Add(new Animal()); // doesn't work with Abstract classes
 
 animals.Add(new Bird() { Weight = 1 });
 animals.Add(new Dolphin() { Weight = 8 });

@@ -17,4 +17,9 @@ internal class Pterodactyl : Animal, ILizard, IBird
     {
         Console.WriteLine("♫ ♫♫ ♫ ♫ ♫♫");
     }
+
+    public override void Move()
+    {
+        Console.WriteLine("Flying...");
+    }
 }
