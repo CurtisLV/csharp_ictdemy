@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace ToolboxExercise;
 
-internal class Screwdriver
+internal class Screwdriver: Tool
 {
 }
