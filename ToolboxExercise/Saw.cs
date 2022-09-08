@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace ToolboxExercise;
 
-internal class Saw
+internal class Saw: Tool
 {
 }
