@@ -8,20 +8,21 @@ namespace ToolboxExercise;
 
 internal class Toolbox
 {
-    public int MaxWeight { get; private set; }
-
-    public int MaxTools { get; private set; }
+    private int maxWeight;
 
     public int CurrentWeight { get; private set; }
 
     private List<Tool> tools = new List<Tool>();
 
-    public Toolbox(int maxWeight, int maxTools, int currentWeight, List<Tool> tools)
+    public IEnumerable<Tool> Tools
     {
-        MaxWeight = maxWeight;
-        MaxTools = maxTools;
-        CurrentWeight = currentWeight;
-        this.tools = tools;
+        get { return tools.ToArray(); }
+    }
+
+    public Toolbox(int maxWeight) 
+    {
+        this.maxWeight = maxWeight;
+        CurrentWeight = 1000;
     }
 
     public void AddTool(Tool tool) 
