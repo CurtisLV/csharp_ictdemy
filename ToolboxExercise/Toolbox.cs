@@ -14,6 +14,7 @@ internal class Toolbox
 
     private List<Tool> tools = new List<Tool>();
 
+    // Collection of tools just for reading, if it was public, user would be able to change the weights
     public IEnumerable<Tool> Tools
     {
         get { return tools.ToArray(); }
@@ -25,14 +26,39 @@ internal class Toolbox
         CurrentWeight = 1000;
     }
 
-    public void AddTool(Tool tool) 
+    public bool AddTool(Tool tool) 
     {
-        tools.Add(tool);
+        // Cannot exceede max weight
+        if (!(CurrentWeight + tool.Weight > maxWeight))
+        {
+            tools.Add(tool);
+            CurrentWeight += tool.Weight;
+            return true;
+        }
+        return false;
     }
 
-    public void RemoveTool(Tool tool) 
+    public bool RemoveTool(Tool tool) 
     {
-        tools.Remove(tool);
+        if (tools.Remove(tool))
+        {
+            CurrentWeight -= tool.Weight;
+            return true;
+        }
+        return false;
+    }
+
+    public int TwoHandedHammerWeight()
+    {
+        int weight = 0;
+        foreach (Tool tool in tools)
+        {
+            if (tool is Hammer && ((Hammer)tool).IsTwoHanded)
+            {
+                weight+= tool.Weight;
+            }
+        }
+        return weight;
     }
 
 }
