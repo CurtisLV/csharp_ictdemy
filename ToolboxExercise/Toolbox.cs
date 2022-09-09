@@ -61,4 +61,13 @@ internal class Toolbox
         return weight;
     }
 
+    public override string ToString()
+    {
+        if (tools.Count > 0)
+        {
+            return "Box contents: " + string.Join(", ", tools);
+        }
+        return "The box is empty.";
+    }
+
 }
