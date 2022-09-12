@@ -17,6 +17,6 @@ internal class Hammer : Tool
 
     public override void Work()
     {
-        Console.WriteLine("Hammering nails");
+        Console.WriteLine("I'm hammering");
     }
 }

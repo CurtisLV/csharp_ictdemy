@@ -21,6 +21,6 @@ foreach (Tool n in toolbox.Tools)
 }
 
 // Calculate weight of all two-handed hammers
-Console.WriteLine("The weight of the two-handed hammers is {0} grams", toolbox.TwoHandedHammerWeight());
+Console.WriteLine($"The weight of the two-handed hammers is {toolbox.TwoHandedHammerWeight()} grams");
 
 Console.ReadKey();
