@@ -6,13 +6,18 @@ using System.Threading.Tasks;
 
 namespace ComparingAndOperator
 {
-    internal abstract class Human
+    internal abstract class Human : IComparable 
     {
 
-        public string FirstName;
-        public string LastName;
-        public string BirthDate;
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string BirthDate { get; set; }
 
+        public int CompareTo()
+        {
+        }
+
+        
 
     }
 }
