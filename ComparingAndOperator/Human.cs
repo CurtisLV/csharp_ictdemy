@@ -13,6 +13,14 @@ namespace ComparingAndOperator
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
 
+        private static Random random = new Random();
+        public Human(string firstName, string lastName, DateTime birthDate)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            BirthDate = birthDate;
+        }
+
         public int CompareTo(object obj)
         {
             // TODO: This also has to sort alphabetically, firstly
