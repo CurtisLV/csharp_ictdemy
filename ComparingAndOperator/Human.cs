@@ -35,5 +35,9 @@ namespace ComparingAndOperator
             }
             return 0;
         }
+
+        // overload + operator
+
+        // override ToString()
     }
 }
