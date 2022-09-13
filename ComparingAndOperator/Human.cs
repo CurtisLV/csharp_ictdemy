@@ -11,13 +11,20 @@ namespace ComparingAndOperator
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string BirthDate { get; set; }
+        public DateTime BirthDate { get; set; }
 
-        public int CompareTo()
+        public int CompareTo(object obj)
         {
+            Human other = obj as Human;
+            if (DateTime.Compare(this.BirthDate, other.BirthDate) < 0)
+            {
+                return -1;
+            }
+            if (DateTime.Compare(this.BirthDate, other.BirthDate) > 0)
+            {
+                return 1;
+            }
+            return 0;
         }
-
-        
-
     }
 }
