@@ -15,6 +15,7 @@ namespace ComparingAndOperator
 
         public int CompareTo(object obj)
         {
+            // TODO: This also has to sort alphabetically, firstly
             Human other = obj as Human;
             if (DateTime.Compare(this.BirthDate, other.BirthDate) < 0)
             {
