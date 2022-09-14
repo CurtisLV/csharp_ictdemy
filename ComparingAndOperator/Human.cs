@@ -9,14 +9,14 @@ namespace ComparingAndOperator
     internal abstract class Human : IComparable 
     {
 
-        public string FirstName { get; set; }
+        public string Name { get; set; }
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
 
         private static Random random = new Random();
-        public Human(string firstName, string lastName, DateTime birthDate)
+        public Human(string name, string lastName, DateTime birthDate)
         {
-            FirstName = firstName;
+            Name = name;
             LastName = lastName;
             BirthDate = birthDate;
         }
@@ -25,6 +25,9 @@ namespace ComparingAndOperator
         {
             // TODO: This also has to sort alphabetically, firstly
             Human other = obj as Human;
+
+            if 
+
             if (DateTime.Compare(this.BirthDate, other.BirthDate) < 0)
             {
                 return -1;

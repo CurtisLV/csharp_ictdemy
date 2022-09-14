@@ -8,7 +8,7 @@ namespace ComparingAndOperator;
 
 internal class Woman : Human
 {
-    public Woman(string firstName, string lastName, DateTime birthDate) : base(firstName, lastName, birthDate)
+    public Woman(string name, string lastName, DateTime birthDate) : base(name, lastName, birthDate)
     {
     }
 }
