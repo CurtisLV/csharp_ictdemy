@@ -23,20 +23,13 @@ namespace ComparingAndOperator
 
         public int CompareTo(object obj)
         {
-            // TODO: This also has to sort alphabetically, firstly
             Human other = obj as Human;
 
-            if 
-
-            if (DateTime.Compare(this.BirthDate, other.BirthDate) < 0)
+            if (Name == other.Name && LastName == other.LastName)
             {
-                return -1;
+                return BirthDate.CompareTo(other.BirthDate);
             }
-            if (DateTime.Compare(this.BirthDate, other.BirthDate) > 0)
-            {
-                return 1;
-            }
-            return 0;
+            return Name.CompareTo(other.Name);
         }
 
         // overload + operator
