@@ -33,6 +33,13 @@ namespace ComparingAndOperator
         }
 
         // overload + operator
+        public static Human operator +(Human human1, Human human2)
+        {
+            if (human1.GetType() == human2.GetType())
+            {
+                return null;
+            }
+        }
 
         // override ToString()
     }
