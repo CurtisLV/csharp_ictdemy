@@ -39,8 +39,21 @@ namespace ComparingAndOperator
             {
                 return null;
             }
+
+            Man man = (human1 is Man) ? (Man)human1 : (Man)human2;
+            Woman woman = (human1 is Woman) ? (Woman)human1 : (Woman)human2;
+
+            if (random.Next(2) == 0)
+            {
+                return new Man("Adam", man.LastName, DateTime.Now);
+            }
+            return new Woman("Eve", woman.LastName, DateTime.Now);
         }
 
         // override ToString()
+        public override string ToString()
+        {
+            return $"{Name} {LastName} {BirthDate.ToString("yy")}";
+        }
     }
 }
