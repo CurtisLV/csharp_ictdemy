@@ -40,7 +40,11 @@ internal class Customer
     }
 
     // overriding the object hash code generation method (doing so is necessary when overriding the Equals() method )
-
+    public override int GetHashCode()
+    {
+        // ^ is bitwise exclusive OR
+        return name.GetHashCode() ^ surname.GetHashCode() ^ birthDate.GetHashCode();
+    }
 
 
 }
