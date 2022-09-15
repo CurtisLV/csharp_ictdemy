@@ -32,4 +32,15 @@ internal class Customer
     {
         return ((a.name == b.name) && (a.surname == b.surname) && (a.birthDate == b.birthDate));
     }
+
+    // when we overload the == operator, we have to overload the != operator as well.
+    public static bool operator !=(Customer a, Customer b)
+    {
+        return !(a == b);
+    }
+
+    // overriding the object hash code generation method (doing so is necessary when overriding the Equals() method )
+
+
+
 }
