@@ -20,5 +20,16 @@ internal class Customer
         this.birthDate = birthDate;
     }
 
+    // overriding the Equals() method
+    public override bool Equals(object? obj)
+    {
+        // check the object type and value using an overriden operator
+        return ((obj is Customer) && (this == (Customer)obj));
+    }
 
+    // overloading the == operator (which does not use Equals())
+    public override bool operator ==(Customer a, Customer b)
+    {
+        return ((a.name == b.name) && (a.surname == b.surname) && (a.birthDate == b.birthDate));
+    }
 }
