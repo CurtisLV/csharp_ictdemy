@@ -46,5 +46,8 @@ internal class Customer
         return name.GetHashCode() ^ surname.GetHashCode() ^ birthDate.GetHashCode();
     }
 
-
+    public override string ToString()
+    {
+        return $"{name} {surname} {birthDate.ToLongDateString()}";
+    }
 }
