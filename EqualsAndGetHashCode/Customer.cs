@@ -8,4 +8,17 @@ namespace EqualsAndGetHashCode;
 
 internal class Customer
 {
+
+    public string name;
+    public string surname;
+    public DateTime birthDate;
+
+    public Customer(string name, string surname, DateTime birthDate)
+    {
+        this.name = name;
+        this.surname = surname;
+        this.birthDate = birthDate;
+    }
+
+
 }
