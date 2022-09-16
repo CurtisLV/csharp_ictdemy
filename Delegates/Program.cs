@@ -21,7 +21,6 @@ Console.WriteLine(numbers);
 //Console.WriteLine(numbers);
 
 numbers.PerformOperation((a) => a * a);
-
 Console.WriteLine(numbers);
 
 numbers.PerformOperation((a) => a * 2);

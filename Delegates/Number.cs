@@ -28,9 +28,9 @@ internal class Number
         return output;
     }
 
-    public delegate int Operation(int a);
+    //public delegate int Operation(int a);
 
-    public void PerformOperation(Operation operation)
+    public void PerformOperation(Func<int, int> operation)
     {
         for (var i = 0; i < 10; i++)
         {
