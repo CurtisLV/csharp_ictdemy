@@ -20,15 +20,9 @@ Console.WriteLine(numbers);
 
 //Console.WriteLine(numbers);
 
-numbers.PerformOperation(delegate (int a)
-{
-    return a * a;
-});
+numbers.PerformOperation((a) => a * a);
 
 Console.WriteLine(numbers);
 
-numbers.PerformOperation(delegate (int a)
-{
-    return a * 2;
-});
+numbers.PerformOperation((a) => a * 2);
 Console.WriteLine(numbers);
