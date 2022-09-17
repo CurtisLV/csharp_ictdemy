@@ -58,8 +58,6 @@ internal class User
         return !(a == b);
     }
 
-
-
     public override int GetHashCode()
     {
         return FirstName.GetHashCode() ^ LastName.GetHashCode() ^ Birthdate.GetHashCode() ^ Sex.GetHashCode() ^ EyeColor.GetHashCode() ^ HairColor.GetHashCode();
