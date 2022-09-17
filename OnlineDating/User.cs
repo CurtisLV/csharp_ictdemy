@@ -11,7 +11,7 @@ public enum Sex
 }
 public enum HairColor
 {
-    NotSpecified, Blonde, Brown, Black, Redhead
+    NotSpecified, Blond, Brown, Black, Ginger
 }
 public enum EyeColor
 {
@@ -43,10 +43,22 @@ internal class User
         Sex = sex;
     }
 
-    public override bool Equals(object? obj)
+    public override bool Equals(object obj)
     {
         return ((obj is User) && (this == (User)obj));
     }
+
+    public static bool operator ==(User a, User b)
+    {
+        return (a.FirstName == b.FirstName && a.LastName == b.LastName && a.Birthdate == b.Birthdate && a.EyeColor == b.EyeColor && a.HairColor == b.HairColor);
+    }
+
+    public static bool operator !=(User a, User b)
+    {
+        return !(a == b);
+    }
+
+
 
     public override int GetHashCode()
     {
