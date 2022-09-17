@@ -48,5 +48,14 @@ internal class User
         return ((obj is User) && (this == (User)obj));
     }
 
+    public override int GetHashCode()
+    {
+        return FirstName.GetHashCode() ^ LastName.GetHashCode() ^ Birthdate.GetHashCode() ^ Sex.GetHashCode() ^ EyeColor.GetHashCode() ^ HairColor.GetHashCode();
+    }
+
+    public override string ToString()
+    {
+        return $"{FirstName} {LastName}, {String.Format("YY", Birthdate)}, eyes: {EyeColor}, hair: {HairColor}";
+    }
 
 }
