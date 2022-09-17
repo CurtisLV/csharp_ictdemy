@@ -43,7 +43,10 @@ internal class User
         Sex = sex;
     }
 
-
+    public override bool Equals(object? obj)
+    {
+        return ((obj is User) && (this == (User)obj));
+    }
 
 
 }
