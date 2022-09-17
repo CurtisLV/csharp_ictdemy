@@ -33,7 +33,7 @@ internal class User
 
     public HairColor HairColor { get; set; }    
 
-    public User(string firstName, string lastName, DateTime birthdate, Sex sex, EyeColor eyeColor, HairColor hairColor)
+    public User(string firstName, string lastName, Sex sex, DateTime birthdate, EyeColor eyeColor, HairColor hairColor)
     {
         FirstName = firstName;
         LastName = lastName;
