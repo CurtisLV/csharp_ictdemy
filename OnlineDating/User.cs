@@ -15,8 +15,12 @@ internal class User
     public enum Sex
     {
         Male, Female
-    };
-
+    }
+    public enum HairColor
+    {
+        NotSpecified, Blonde, Brown, Black, Redhead
+    }
+    
     [Flags]
     public enum EyeColor
     {
@@ -27,5 +31,12 @@ internal class User
         Black = 8, 
         Cyan = 3, 
         Browngreen = 6
+    }
+
+    public User(string firstName, string lastName, DateTime birthdate)
+    {
+        FirstName = firstName;
+        LastName = lastName;
+        Birthdate = birthdate;
     }
 }
