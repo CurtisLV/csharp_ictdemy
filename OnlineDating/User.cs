@@ -55,7 +55,7 @@ internal class User
 
     public override string ToString()
     {
-        return $"{FirstName} {LastName}, {String.Format("YY", Birthdate)}, eyes: {EyeColor}, hair: {HairColor}";
+        return $"{FirstName} {LastName}, {Birthdate.ToString("yyyy")}, eyes: {EyeColor}, hair: {HairColor}";
     }
 
 }
