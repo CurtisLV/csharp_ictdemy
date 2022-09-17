@@ -17,5 +17,15 @@ internal class User
         Male, Female
     };
 
-
+    [Flags]
+    public enum EyeColor
+    {
+        NotSpecified = 0, 
+        Blue = 1, 
+        Green = 2, 
+        Brown = 4, 
+        Black = 8, 
+        Cyan = 3, 
+        Browngreen = 6
+    }
 }
