@@ -3,7 +3,7 @@
 MyList myList = new MyList();
 
 myList.Add(1);
-myList.Add("second");
+myList.Add("Second");
 
 for (int i = 3; i < 2000; i++)
 {
@@ -12,4 +12,7 @@ for (int i = 3; i < 2000; i++)
 
 myList[3] = "Fourth";
 
-
+for (int i = 0; i < 100; i++)
+{
+    Console.WriteLine(myList[i]);
+}
