@@ -18,9 +18,11 @@ internal class MyList
         items[Count] = item;
         Count++;
 
-        if (Count == 10)
+        if (Count == items.Length)
         {
-
+            object[] items2 = new object[Count * 2];
+            items.CopyTo(items2, 0);
+            items = items2;
         }
     }
 
