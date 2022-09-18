@@ -13,8 +13,14 @@ internal class MyList
 
     public int Count { get; private set; }
 
-    public int this[int i] 
+    public object this[int i] 
     {
+        get {
+            return items[i];
+        }
+        set {
+            items[i] = value;
+        }
     }
 
     public void Add(object item)
