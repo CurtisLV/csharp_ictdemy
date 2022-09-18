@@ -13,6 +13,10 @@ internal class MyList
 
     public int Count { get; private set; }
 
+    public int this[int i] 
+    {
+    }
+
     public void Add(object item)
     {
         items[Count] = item;
@@ -25,5 +29,7 @@ internal class MyList
             items = items2;
         }
     }
+
+
 
 }
