@@ -8,4 +8,12 @@ namespace DelegatesExercise;
 
 internal class Sentence
 {
+
+    private string[] words;
+
+    public Sentence(string text)
+    {
+        char[] chars = ['.', ',', '!', ' ', ':'];  
+
+    }
 }
