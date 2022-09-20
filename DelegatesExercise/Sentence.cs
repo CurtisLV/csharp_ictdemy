@@ -21,4 +21,14 @@ internal class Sentence
     {
         return String.Join(" ", words) + ".";
     }
+
+    public void Map(Func<string, string> function)
+    {
+        for (int i = 0; i < words.Length; i++)
+        {
+            words[i] = function(words[i]);
+        }
+    }
+
+
 }
