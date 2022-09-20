@@ -14,6 +14,11 @@ internal class Sentence
     public Sentence(string text)
     {
         char[] chars = ['.', ',', '!', ' ', ':'];  
+        words = text.Split(chars, StringSplitOptions.RemoveEmptyEntries);
+    }
 
+    public override string ToString()
+    {
+        return String.Join(" ", words) + ".";
     }
 }
