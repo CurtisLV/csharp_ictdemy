@@ -13,7 +13,7 @@ internal class Sentence
 
     public Sentence(string text)
     {
-        char[] chars = ['.', ',', '!', ' ', ':'];  
+        char[] chars = { '.', ',', '!', ' ', ':' };  
         words = text.Split(chars, StringSplitOptions.RemoveEmptyEntries);
     }
 
