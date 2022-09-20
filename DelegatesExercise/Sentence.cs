@@ -30,5 +30,19 @@ internal class Sentence
         }
     }
 
+    public string Aggregate(Func<string, string, string> function)
+    {
+        if (words.Length == null)
+        {
+            return null;
+        }
+        string result = words[0];
+        for (int i = 1; i < words.Length; i++)
+        {
+            result = function(result, words[i]);
+        }
+        return result;
+    }
+
 
 }
