@@ -32,7 +32,7 @@ internal class Sentence
 
     public string Aggregate(Func<string, string, string> function)
     {
-        if (words.Length == null)
+        if (words.Length == 0)
         {
             return null;
         }
