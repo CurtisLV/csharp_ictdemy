@@ -9,3 +9,6 @@ string aggregate2 = sentence.Aggregate((a, b) => "(" + a + ") " + b);
 string aggregate3 = sentence.Aggregate((a,b) => a + " " + ((b.Length > 4) ? b.Substring(0, 3) + "." : b));
 
 Console.WriteLine($"Aggregates: \n{aggregate1}\n{aggregate2}\n{aggregate3}");
+
+string aggregate4 = sentence.Aggregate((a, b) => a + "yOlO " + ((b.Length > 7) ? b.ToLower() : b.ToUpper()));
+Console.WriteLine(aggregate4);
