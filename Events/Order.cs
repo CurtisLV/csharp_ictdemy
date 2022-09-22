@@ -42,4 +42,9 @@ internal class Order
         State = state;
         OnStateChanged(EventArgs.Empty);
     }
+
+    public override string ToString()
+    {
+        return Product + " order";
+    }
 }
