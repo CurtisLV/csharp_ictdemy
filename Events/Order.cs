@@ -19,5 +19,12 @@ internal class Order
 
     public string Product { get; private set; }
 
+    public event EventHandler StateChanged;
 
+    public Order( string product)
+    {
+        State = EState.Unconfirmed;
+        oldState = State;
+        Product = product;
+    }
 }
