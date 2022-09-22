@@ -27,4 +27,19 @@ internal class Order
         oldState = State;
         Product = product;
     }
+
+    protected void OnStateChanged(EventArgs e)
+    {
+        if (State != oldState)
+        {
+            StateChanged(this, e);
+        }
+    }
+
+    public void ChangeState(EState state)
+    {
+        oldState = State;
+        State = state;
+        OnStateChanged(EventArgs.Empty);
+    }
 }
