@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlarmClockExercise
+namespace AlarmClockExercise;
+
+internal class Clock
 {
-    internal class Clock
-    {
-    }
+
+    public event EventHandler ClockStatus;
+
+
 }
