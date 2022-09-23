@@ -8,4 +8,24 @@ namespace AlarmClockExercise;
 
 internal class Human
 {
-}
+    public enum EState
+    {
+        Up, Sleeping
+    }
+
+    public EState State { get; private set; }
+
+    public event EventHandler SleepStatus;
+
+    public Human()
+    {
+        State = EState.Sleeping;
+    }
+
+    public void WakeUp()
+    {
+    }
+
+}   
+
+
