@@ -11,7 +11,7 @@ public enum ELights
     Green, Yellow, Red
 }
 
-internal class TrafficLight
+class TrafficLight
 {
     public event EventHandler OnLightChange; 
     private ELights lights;
@@ -21,6 +21,7 @@ internal class TrafficLight
         } 
         set {
             lights = value;
+            Console.WriteLine($"{lights} light");
             OnLightChangeEvent();
         } 
     }
@@ -30,7 +31,6 @@ internal class TrafficLight
         if (OnLightChange != null)
         {
             OnLightChange(this, EventArgs.Empty);
-            Console.WriteLine($"{lights} light");
         }
     }
 }

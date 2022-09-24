@@ -28,7 +28,7 @@ internal class Car
     {
         if (speed > 0)
         {
-            return "I'm drivign";
+            return "I'm driving";
         }
         return "I'm idle";
     }
