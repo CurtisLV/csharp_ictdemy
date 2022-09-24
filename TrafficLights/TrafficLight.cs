@@ -30,6 +30,7 @@ internal class TrafficLight
         if (OnLightChange != null)
         {
             OnLightChange(this, EventArgs.Empty);
+            Console.WriteLine($"{lights} light");
         }
     }
 }

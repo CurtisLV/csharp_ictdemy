@@ -8,4 +8,15 @@ namespace TrafficLights;
 
 internal class Car
 {
+    private int speed = 0;
+
+    public void Run()
+    {
+        speed = 100;
+    }
+
+    public void ReactOnTrafficLight(Object sender, EventArgs e)
+    {
+
+    }
 }
