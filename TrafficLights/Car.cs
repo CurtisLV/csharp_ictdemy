@@ -17,6 +17,19 @@ internal class Car
 
     public void ReactOnTrafficLight(Object sender, EventArgs e)
     {
+        ELights lights = ((TrafficLight)sender).Lights;
+        if (lights == ELights.Red)
+        {
+            speed = 0;
+        }
+    }
 
+    public override string ToString()
+    {
+        if (speed > 0)
+        {
+            return "I'm drivign";
+        }
+        return "I'm idle";
     }
 }
