@@ -17,7 +17,7 @@ internal class AlarmClock
 
     public virtual void Ring()
     {
-        Console.WriteLine("Digialarm went off");
+        Console.WriteLine("The alarm went off");
         OnRingEvent(10);
     }
 
