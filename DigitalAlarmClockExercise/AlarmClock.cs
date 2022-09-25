@@ -12,7 +12,7 @@ internal class AlarmClock
 
     public void OnRingEvent(int volume)
     {
-        Ringing?.Invoke(this, new AlarmEventProperties(volume));
+        Ringing(this, new AlarmEventProperties(volume));
     }
 
     public virtual void Ring()
