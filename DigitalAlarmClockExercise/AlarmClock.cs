@@ -10,4 +10,15 @@ internal class AlarmClock
 {
     public event EventHandler<AlarmEventProperties> Ringing;
 
+    public void OnRingEvent(int volume)
+    {
+        Ringing?.Invoke(this, new AlarmEventProperties(volume));
+    }
+
+    public virtual void Ring()
+    {
+        Console.WriteLine("Digialarm went off");
+        OnRingEvent(10);
+    }
+
 }
