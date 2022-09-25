@@ -8,4 +8,11 @@ namespace Events2;
 
 internal class ButtonMaster
 {
+    public event EventHandler? ButtonPressed;
+
+    public void OnButtonPress(char keyCode)
+    {
+        ButtonPressed?.Invoke(this, EventArgs.Empty);
+    }
+
 }
