@@ -8,4 +8,6 @@ namespace DigitalAlarmClockExercise;
 
 internal class AlarmClock
 {
+    public event EventHandler<AlarmEventProperties> Ringing;
+
 }
