@@ -16,3 +16,8 @@ internal class ButtonMaster
     }
 
 }
+
+public class ButtonPressedEventsArgs
+{
+    public char KeyCode { get; }
+}
