@@ -4,7 +4,7 @@ var buttonMaster = new ButtonMaster();
 
 buttonMaster.ButtonPressed += (sender, eventArgs) =>
 {
-    Console.WriteLine("Button was pressed");
+    Console.WriteLine($"Button {eventArgs.KeyCode} was pressed");
 };
 
 Start:
