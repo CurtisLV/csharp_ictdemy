@@ -8,7 +8,7 @@ namespace UserProcessingSystemEVENTS;
 
 public class UserProcessor
 {
-    public static event EventHandler UserProcesorEvent;
+    public static event EventHandler<UserArgs> UserProcesorEvent;
 
     public static void ProcessUser(string name, int age)
     {

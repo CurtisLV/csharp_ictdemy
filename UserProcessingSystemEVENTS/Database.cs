@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace UserProcessingSystemEVENTS;
 
-public class UserArgs : EventArgs
+internal class Database
 {
-    public string Name { get; set; }
-    public int Age { get; set; }
+    public void SaveToDB(object sender, EventArgs e)
+    {
+        Console.WriteLine("Data saved to database!");
+    }
 }
