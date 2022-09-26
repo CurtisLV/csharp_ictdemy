@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace UserProcessingSystemEVENTS;
 
-internal class IdCardGenerator
+public class IdCardGenerator
 {
+    public void GenerateIdCard(object sender, EventArgs e)
+    {
+        Guid id = Guid.NewGuid();
+        Console.WriteLine($"ID card generated: {id}");
+    }
 }
