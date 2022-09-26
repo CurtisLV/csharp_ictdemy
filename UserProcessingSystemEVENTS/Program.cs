@@ -16,5 +16,22 @@ Console.WriteLine("2. exit : Close application ");
 
 while (true)
 {
+    Console.Write("\nEnter command!");
+    string cmdInput = Console.ReadLine();
 
+    if (cmdInput == "exit")
+    {
+        break;
+    }
+    else if (cmdInput == "new")
+    {
+        Console.Write("\nEnter username");
+        string name = Console.ReadLine();
+        Console.Write("\nEnter username");
+        int age = Int32.Parse(s: Console.ReadLine());
+    }
+    else
+    {
+        Console.WriteLine("Invalid command!!";
+    }
 }
