@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace UserProcessingSystemEVENTS;
 
-public class UserProcessor
+public class UserArgs
 {
-    public static event EventHandler UserProcesorEvent;
 
-    public static void ProcessUser(string name, int age)
-    {
-    }
 }
