@@ -29,9 +29,11 @@ while (true)
         string name = Console.ReadLine();
         Console.Write("\nEnter username");
         int age = Int32.Parse(s: Console.ReadLine());
+
+        UserProcessor.ProcessUser(name, age);
     }
     else
     {
-        Console.WriteLine("Invalid command!!";
+        Console.WriteLine("Invalid command!!");
     }
 }
