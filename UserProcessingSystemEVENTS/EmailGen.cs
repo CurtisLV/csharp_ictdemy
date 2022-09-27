@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace UserProcessingSystemEVENTS;
-
 public class EmailGen
 {
     public void SendEmail(object sender, UserArgs e)

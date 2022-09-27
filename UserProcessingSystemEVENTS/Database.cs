@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace UserProcessingSystemEVENTS;
-
 internal class Database
 {
     public void SaveToDB(object sender, EventArgs e)

@@ -1,10 +1,8 @@
 ﻿using UserProcessingSystemEVENTS;
 
-
 Database db = new Database();
 EmailGen eg = new EmailGen();
 IdCardGenerator id = new IdCardGenerator();
-
 
 UserProcessor.UserProcesorEvent += db.SaveToDB;
 UserProcessor.UserProcesorEvent += eg.SendEmail;
