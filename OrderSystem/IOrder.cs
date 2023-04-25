@@ -8,51 +8,27 @@ namespace OrderSystem;
 
 internal interface IOrder
 {
-    int Number {
-        get;
-    }
+    int Number { get; }
 
-    string FirstName {
-        get;
-    }
+    string FirstName { get; }
 
-    string LastName {
-        get;
-    }
+    string LastName { get; }
 
-    string Street {
-        get;
-    }
+    string Street { get; }
 
-    int HouseNumber {
-        get;
-    }
+    int HouseNumber { get; }
 
-    int RegistryNumber {
-        get;
-    }
+    int RegistryNumber { get; }
 
-    string City {
-        get;
-    }
+    string City { get; }
 
-    string Zip {
-        get;
-    }
+    string Zip { get; }
 
-    string Country {
-        get;
-    }
+    string Country { get; }
 
-    string[] Products {
-        get;
-    }
+    string[] Products { get; }
 
-    int[] Quantities {
-        get;
-    }
+    int[] Quantities { get; }
 
-    double[] Prices {
-        get;
-    }
+    double[] Prices { get; }
 }
