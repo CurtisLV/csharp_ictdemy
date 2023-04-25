@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace AlarmClockExercise;
+
 public delegate void Ringing();
 
 internal class Clock
 {
-
     public event Ringing Ringing;
 
     public void Ring()
@@ -19,5 +19,4 @@ internal class Clock
             Ringing();
         }
     }
-
 }

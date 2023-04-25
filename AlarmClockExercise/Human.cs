@@ -12,7 +12,4 @@ internal class Human
     {
         Console.WriteLine("I'm up!");
     }
-
-}   
-
-
+}
