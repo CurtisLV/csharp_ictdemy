@@ -8,7 +8,6 @@ namespace OrderSystem;
 
 internal class Gateway
 {
-
     public void ProcessOrder(IOrder order)
     {
         Console.WriteLine($"Order no. {order.Number}");
@@ -20,10 +19,11 @@ internal class Gateway
         Console.WriteLine();
         for (int i = 0; i < order.Products.Length; i++)
         {
-            Console.WriteLine($"{order.Products[i]} {order.Quantities[i]}pcs per ${order.Prices[i]}");
+            Console.WriteLine(
+                $"{order.Products[i]} {order.Quantities[i]}pcs per ${order.Prices[i]}"
+            );
         }
         Console.WriteLine();
         Console.WriteLine($"Total price: ${order.Prices.Sum()}");
     }
-
 }
