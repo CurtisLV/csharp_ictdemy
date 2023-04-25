@@ -26,10 +26,8 @@ internal class Database
     {
         List<Entry> found = new List<Entry>();
         foreach (Entry entry in entries)
-        {   // Filtered by time and date
-            if (((byTime) && (entry.Occurs == date)) 
-            || 
-            ((!byTime) && (entry.Occurs.Date == date.Date))) 
+        { // Filtered by time and date
+            if (((byTime) && (entry.Occurs == date)) || ((!byTime) && (entry.Occurs.Date == date.Date)))
             {
                 found.Add(entry);
             }
