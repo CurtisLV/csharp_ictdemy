@@ -12,22 +12,27 @@ internal class Warrior
     /// Warrior's name
     /// </summary>
     protected string name;
+
     /// <summary>
     /// Health in HP
     /// </summary>
     protected int health;
+
     /// <summary>
     /// Max health in HP
     /// </summary>
     protected int maxHealth;
+
     /// <summary>
     ///  Damage in HP
     /// </summary>
     protected int damage;
+
     /// <summary>
     /// Defense in HP
     /// </summary>
     protected int defense;
+
     /// <summary>
     /// Rolling dice instance
     /// </summary>
@@ -70,7 +75,6 @@ internal class Warrior
         }
         s = s.PadRight(total);
 
-        
         return s;
     }
 
@@ -78,7 +82,6 @@ internal class Warrior
     {
         return GraphicalBar(health, maxHealth);
     }
-
 
     public void Defend(int hit)
     {
@@ -92,7 +95,6 @@ internal class Warrior
                 health = 0;
                 message += " and died";
             }
-
         }
         else
         {
@@ -118,6 +120,4 @@ internal class Warrior
     {
         return message;
     }
-
-
 }
