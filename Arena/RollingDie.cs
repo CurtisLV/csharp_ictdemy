@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Arena;
+
 /// <summary>
 /// Class representing a die for a board game
 /// </summary>
@@ -17,7 +18,8 @@ internal class RollingDie
     {
         this.sidesCount = sidesCount;
         random = new Random();
-    }    
+    }
+
     public RollingDie()
     {
         this.sidesCount = 6;
@@ -31,13 +33,11 @@ internal class RollingDie
 
     public int Roll()
     {
-        return random.Next(1, sidesCount+1);
+        return random.Next(1, sidesCount + 1);
     }
 
     public override string ToString()
     {
         return String.Format($"Rolling a die with {sidesCount} sides");
     }
-
-
 }
