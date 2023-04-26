@@ -18,6 +18,7 @@ internal class Truck
             totalLoad += weight;
         }
     }
+
     public void Unload(int weight)
     {
         if (totalLoad - weight >= 0)
@@ -30,7 +31,4 @@ internal class Truck
     {
         Console.WriteLine($"Currently there is {totalLoad} kg loaded in the truck");
     }
-
-
-
 }
