@@ -19,5 +19,4 @@ internal class Garage
     {
         return $"There is a car inside: {car.GetLincesePlate()}";
     }
-
 }
