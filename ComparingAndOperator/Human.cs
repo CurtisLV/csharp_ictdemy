@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace ComparingAndOperator;
 
-internal abstract class Human : IComparable 
+internal abstract class Human : IComparable
 {
-
     public string Name { get; set; }
     public string LastName { get; set; }
     public DateTime BirthDate { get; set; }
 
     private static Random random = new Random();
+
     public Human(string name, string lastName, DateTime birthDate)
     {
         Name = name;
