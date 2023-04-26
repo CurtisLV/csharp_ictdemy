@@ -8,17 +8,11 @@ namespace CarDealership;
 
 internal class Car
 {
-    private string LicensePlate {
-        get; set;
-    }
+    private string LicensePlate { get; set; }
 
-    private string Brand {
-        get;
-    }
+    private string Brand { get; }
 
-    public int Price {
-        get; set;
-    }
+    public int Price { get; set; }
 
     public Car(string licensePlate, string brand, int price)
     {
@@ -26,5 +20,4 @@ internal class Car
         Brand = brand;
         Price = price;
     }
-
 }
