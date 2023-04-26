@@ -8,12 +8,11 @@ namespace DelegatesExercise;
 
 internal class Sentence
 {
-
     private string[] words;
 
     public Sentence(string text)
     {
-        char[] chars = { '.', ',', '!', ' ', ':' };  
+        char[] chars = { '.', ',', '!', ' ', ':' };
         words = text.Split(chars, StringSplitOptions.RemoveEmptyEntries);
     }
 
@@ -43,6 +42,4 @@ internal class Sentence
         }
         return result;
     }
-
-
 }
