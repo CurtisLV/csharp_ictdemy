@@ -14,8 +14,6 @@ for (int i = 0; i < 7; i++)
 
     Console.WriteLine($"{date.ToShortDateString()} - {sum}");
 
-    // date add 1 day 
+    // date add 1 day
     date = date.AddDays(1);
 }
-
-
