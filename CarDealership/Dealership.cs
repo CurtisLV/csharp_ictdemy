@@ -9,20 +9,13 @@ namespace CarDealership;
 
 internal class Dealership
 {
-    private string Address {
-        get; set;
-    }
-    private string City {
-        get; set;
-    }
-    public int Money {
-        get; private set;
-    }
+    private string Address { get; set; }
+    private string City { get; set; }
+    public int Money { get; private set; }
 
-    public int CarCount{
-        get {
-            return cars.Count;
-        }
+    public int CarCount
+    {
+        get { return cars.Count; }
     }
 
     private List<Car> cars = new List<Car>();
@@ -44,7 +37,7 @@ internal class Dealership
         {
             Money += car.Price;
             cars.Remove(car);
-        }  
+        }
     }
 
     public int TotalCarValue()
@@ -56,6 +49,4 @@ internal class Dealership
         }
         return total;
     }
-
-
 }
