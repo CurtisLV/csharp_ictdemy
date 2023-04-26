@@ -8,10 +8,7 @@ namespace BirthDateCalc;
 
 internal class Person
 {
-    public DateTime BirthDate
-    {
-        get; set;
-    }
+    public DateTime BirthDate { get; set; }
 
     public Person(DateTime birthDate)
     {

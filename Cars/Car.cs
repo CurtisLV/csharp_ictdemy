@@ -15,9 +15,8 @@ internal class Car
     {
         this.licensePlate = licensePlate;
         this.color = color;
-
     }
- 
+
     public string GetLincesePlate()
     {
         return licensePlate;
@@ -27,5 +26,4 @@ internal class Car
     {
         garage.Put(this);
     }
-
 }
