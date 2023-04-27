@@ -8,6 +8,5 @@ internal class Grandma : Human
         {
             Console.WriteLine("Grandma wakes up");
         }
-            
     }
 }

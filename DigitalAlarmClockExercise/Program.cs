@@ -1,6 +1,5 @@
 ﻿using DigitalAlarmClockExercise;
 
-
 Human human = new Human();
 Grandma granny = new Grandma();
 
