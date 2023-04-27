@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 
 Console.WriteLine("Prints all Fridays 13th for entered interval:");
 Console.WriteLine("Enter the first date: ");
@@ -10,7 +8,7 @@ DateTime date2 = DateTime.Parse(Console.ReadLine());
 
 Console.Write("Fridays 13th: ");
 
-// try to find friday 
+// try to find friday
 while (date1.DayOfWeek != DayOfWeek.Friday)
 {
     date1 = date1.AddDays(1);
@@ -24,6 +22,6 @@ while (date1 < date2)
     {
         Console.Write(date1.ToShortDateString() + ", ");
     }
-  
+
     date1 = date1.AddDays(7);
 }
