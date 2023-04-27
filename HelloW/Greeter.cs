@@ -12,6 +12,7 @@ namespace HelloW
     internal class Greeter
     {
         public string? text;
+
         public string Greet(string name = "World")
         {
             return $"{text}, {name}!";
