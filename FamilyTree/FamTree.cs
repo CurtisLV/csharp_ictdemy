@@ -8,7 +8,6 @@ namespace FamilyTree;
 
 internal class FamTree
 {
-
     private Person root;
 
     public FamTree(Person root)

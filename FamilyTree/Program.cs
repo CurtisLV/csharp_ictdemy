@@ -8,7 +8,7 @@ Person penelope = new Person("Penelope Olsen", null, null);
 Person homer = new Person("Homer Simpson", abraham, penelope);
 
 // Marge's side
-Person pan  = new Person("Mr Bouvier", null, null);
+Person pan = new Person("Mr Bouvier", null, null);
 Person jackie = new Person("Jackie Bouvier", null, null);
 Person marge = new Person("Marge Simpson", pan, jackie);
 
@@ -22,5 +22,3 @@ treeBart.Print();
 FamTree treeHomer = new FamTree(homer);
 
 treeHomer.Print();
-
-    
