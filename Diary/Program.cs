@@ -3,9 +3,9 @@
 DiaryC diary = new DiaryC();
 char choice = '0';
 
-// main loop 
+// main loop
 
-while (choice != '4') 
+while (choice != '4')
 {
     diary.PrintHomeScreen();
     Console.WriteLine();

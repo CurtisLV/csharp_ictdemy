@@ -16,7 +16,6 @@ internal class Database
     }
 
     // Methods
-
     public void AddEntry(DateTime Occur, string text)
     {
         entries.Add(new Entry(Occur, text));
