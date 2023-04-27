@@ -14,7 +14,6 @@ internal class ButtonMaster
     {
         ButtonPressed?.Invoke(this, new ButtonPressedEventsArgs(keyCode));
     }
-
 }
 
 public class ButtonPressedEventsArgs
