@@ -14,5 +14,4 @@ internal class AlarmClock
         Console.WriteLine("The alarm went off");
         OnRingEvent(10);
     }
-
 }
