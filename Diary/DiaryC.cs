@@ -40,7 +40,7 @@ internal class DiaryC
     {
         DateTime dateTime = ReadDateTime();
         Console.WriteLine("Enter the entry text:");
-        string text = Console.ReadLine(); 
+        string text = Console.ReadLine();
         database.AddEntry(dateTime, text);
     }
 
@@ -63,7 +63,6 @@ internal class DiaryC
         {
             Console.WriteLine("Nothing found");
         }
-
     }
 
     public void DeleteEntries()

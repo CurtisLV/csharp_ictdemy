@@ -8,15 +8,9 @@ namespace Diary;
 
 internal class Entry
 {
-    public DateTime Occurs
-    {
-        get; set;
-    }
+    public DateTime Occurs { get; set; }
 
-    public string Text
-    {
-        get; set;
-    }
+    public string Text { get; set; }
 
     public Entry(DateTime occurs, string text)
     {
