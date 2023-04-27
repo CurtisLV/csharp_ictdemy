@@ -8,8 +8,6 @@ namespace FactorySweets;
 
 internal class SweetsFactory
 {
-
-
     public static Sweet CreateBanana()
     {
         return new Sweet("yellow", "round", 15);
@@ -24,5 +22,4 @@ internal class SweetsFactory
     {
         return new Sweet("brown", "square", 25);
     }
-
 }
