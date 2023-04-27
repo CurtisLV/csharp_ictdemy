@@ -8,10 +8,12 @@ namespace Events;
 
 internal class Order
 {
-
     public enum EState
     {
-        Unconfirmed, Confirmed, Shipped, Delivered
+        Unconfirmed,
+        Confirmed,
+        Shipped,
+        Delivered
     }
 
     public EState State { get; private set; }
@@ -21,7 +23,7 @@ internal class Order
 
     public event EventHandler StateChanged;
 
-    public Order( string product)
+    public Order(string product)
     {
         State = EState.Unconfirmed;
         oldState = State;
