@@ -9,6 +9,7 @@ namespace Events3;
 internal class Button
 {
     public event EventHandler<MyCustomArguments> ButtonClicked;
+
     public void OnClick()
     {
         MyCustomArguments args = new MyCustomArguments();
@@ -20,6 +21,4 @@ internal class Button
 public class MyCustomArguments : EventArgs
 {
     public string Name { get; set; }
-
-
 }

@@ -1,6 +1,5 @@
 ﻿using Events3;
 
-
 Console.WriteLine("Press A button");
 
 var key = Console.ReadLine();
