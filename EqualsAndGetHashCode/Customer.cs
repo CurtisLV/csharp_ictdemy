@@ -8,7 +8,6 @@ namespace EqualsAndGetHashCode;
 
 internal class Customer
 {
-
     public string name;
     public string surname;
     public DateTime birthDate;
