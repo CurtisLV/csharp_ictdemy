@@ -5,14 +5,22 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OnlineDating;
+
 public enum Sex
 {
-    Male, Female
+    Male,
+    Female
 }
+
 public enum HairColor
 {
-    NotSpecified, Blond, Brown, Black, Ginger
+    NotSpecified,
+    Blond,
+    Brown,
+    Black,
+    Ginger
 }
+
 public enum EyeColor
 {
     NotSpecified = 0,
@@ -23,6 +31,7 @@ public enum EyeColor
     Cyan = 3,
     Browngreen = 6
 }
+
 internal class User
 {
     public string FirstName { get; private set; }
@@ -31,9 +40,16 @@ internal class User
     public Sex Sex { get; set; }
     public EyeColor EyeColor { get; set; }
 
-    public HairColor HairColor { get; set; }    
+    public HairColor HairColor { get; set; }
 
-    public User(string firstName, string lastName, Sex sex, DateTime birthdate, EyeColor eyeColor, HairColor hairColor)
+    public User(
+        string firstName,
+        string lastName,
+        Sex sex,
+        DateTime birthdate,
+        EyeColor eyeColor,
+        HairColor hairColor
+    )
     {
         FirstName = firstName;
         LastName = lastName;
@@ -50,7 +66,13 @@ internal class User
 
     public static bool operator ==(User a, User b)
     {
-        return (a.FirstName == b.FirstName && a.LastName == b.LastName && a.Birthdate == b.Birthdate && a.EyeColor == b.EyeColor && a.HairColor == b.HairColor);
+        return (
+            a.FirstName == b.FirstName
+            && a.LastName == b.LastName
+            && a.Birthdate == b.Birthdate
+            && a.EyeColor == b.EyeColor
+            && a.HairColor == b.HairColor
+        );
     }
 
     public static bool operator !=(User a, User b)
@@ -60,12 +82,16 @@ internal class User
 
     public override int GetHashCode()
     {
-        return FirstName.GetHashCode() ^ LastName.GetHashCode() ^ Birthdate.GetHashCode() ^ Sex.GetHashCode() ^ EyeColor.GetHashCode() ^ HairColor.GetHashCode();
+        return FirstName.GetHashCode()
+            ^ LastName.GetHashCode()
+            ^ Birthdate.GetHashCode()
+            ^ Sex.GetHashCode()
+            ^ EyeColor.GetHashCode()
+            ^ HairColor.GetHashCode();
     }
 
     public override string ToString()
     {
         return $"{FirstName} {LastName}, {Birthdate.ToString("yyyy")}, eyes: {EyeColor}, hair: {HairColor}";
     }
-
 }
