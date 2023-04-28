@@ -30,15 +30,15 @@ internal class Location
         if (north != null)
         {
             directions += "go north\n";
-        }         
+        }
         if (east != null)
         {
             directions += "go east\n";
-        }         
+        }
         if (south != null)
         {
             directions += "go south\n";
-        }         
+        }
         if (west != null)
         {
             directions += "go west\n";
