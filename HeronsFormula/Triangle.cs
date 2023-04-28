@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace HeronsFormula;
 
-internal class Triangle: Shape
+internal class Triangle : Shape
 {
     private double a;
     private double b;
     private double c;
 
-    public Triangle(double a, double b, double c, string color) : base(color)
+    public Triangle(double a, double b, double c, string color)
+        : base(color)
     {
         this.a = a;
         this.b = b;
