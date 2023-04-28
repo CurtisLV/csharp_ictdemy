@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace HumanRun;
 
-internal class CSharpProgrammer: Human
+internal class CSharpProgrammer : Human
 {
-
     private string ide;
 
-    public CSharpProgrammer(string name, int age, string ide): base(name, age)
+    public CSharpProgrammer(string name, int age, string ide)
+        : base(name, age)
     {
         this.ide = ide;
     }
-
 
     public void Program(int lines)
     {
@@ -29,5 +28,4 @@ internal class CSharpProgrammer: Human
             tiredness = tiredness + lineAmnt;
         }
     }
-
 }

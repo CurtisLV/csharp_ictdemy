@@ -20,32 +20,28 @@ internal class Human
 
     public void Run(int distance)
     {
-       if (tiredness + distance > 20)
+        if (tiredness + distance > 20)
         {
             Console.WriteLine("I'm too tired");
-        } else 
+        }
+        else
         {
             tiredness = tiredness + distance;
         }
     }
 
-    public void Sleep(int hours) 
+    public void Sleep(int hours)
     {
-
         tiredness -= hours * 10;
 
         if (tiredness < 0)
         {
             tiredness = 0;
-        } 
-         
+        }
     }
 
     public override string ToString()
     {
-        return $"{name} ({age})"; 
+        return $"{name} ({age})";
     }
-
-
-
 }
