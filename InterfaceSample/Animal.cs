@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace InterfaceSample;
 
-internal abstract class Animal: IComparable 
+internal abstract class Animal : IComparable
 {
-    public int Weight {
-        get; set;
-    }
+    public int Weight { get; set; }
 
     virtual public void Breathe()
     {
@@ -35,13 +33,12 @@ internal abstract class Animal: IComparable
 
     public static Animal operator +(Animal animal1, Animal animal2)
     {
-        if (((animal1 is Bird) && (animal2 is Lizard))
-           ||
-           ((animal2 is Bird) && (animal1 is Lizard)))
+        if (
+            ((animal1 is Bird) && (animal2 is Lizard)) || ((animal2 is Bird) && (animal1 is Lizard))
+        )
         {
             return new Pterodactyl() { Weight = animal1.Weight + animal2.Weight };
         }
         return null;
     }
-
 }
