@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace HeronsFormula;
 
-internal class Rectangle: Shape
+internal class Rectangle : Shape
 {
     private double width;
     private double height;
 
-    public Rectangle(double width, double height, string color) : base (color)
+    public Rectangle(double width, double height, string color)
+        : base(color)
     {
         this.width = width;
         this.height = height;
