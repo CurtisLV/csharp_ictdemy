@@ -8,7 +8,6 @@ namespace InterfaceSample;
 
 internal class Dolphin : Animal
 {
-
     public void Jump()
     {
         Console.WriteLine("Dolphin flip!");
@@ -18,5 +17,4 @@ internal class Dolphin : Animal
     {
         Console.WriteLine("Swimming...");
     }
-
 }

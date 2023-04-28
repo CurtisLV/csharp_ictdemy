@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceSample;
 
-internal class Lizard: Animal, ILizard
+internal class Lizard : Animal, ILizard
 {
     public void Crawl()
     {
@@ -17,5 +17,4 @@ internal class Lizard: Animal, ILizard
     {
         Console.WriteLine("Crawling...");
     }
-
 }
