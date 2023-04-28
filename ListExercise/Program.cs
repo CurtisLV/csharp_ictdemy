@@ -1,7 +1,7 @@
 ﻿List<string> words = new List<string>();
 string answer = "";
 
-while (answer != "end") 
+while (answer != "end")
 {
     Console.Write("Enter a word: ");
     answer = Console.ReadLine().ToLower();
