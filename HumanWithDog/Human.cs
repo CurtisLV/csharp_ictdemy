@@ -16,5 +16,4 @@ internal class Human
         this.name = name;
         this.dog = dog;
     }
-
 }
