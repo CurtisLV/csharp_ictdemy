@@ -8,19 +8,14 @@ namespace OwnList;
 
 internal class MyList
 {
-
     private object[] items = new object[10];
 
     public int Count { get; private set; }
 
-    public object this[int i] 
+    public object this[int i]
     {
-        get {
-            return items[i];
-        }
-        set {
-            items[i] = value;
-        }
+        get { return items[i]; }
+        set { items[i] = value; }
     }
 
     public void Add(object item)
@@ -35,7 +30,4 @@ internal class MyList
             items = items2;
         }
     }
-
-
-
 }
