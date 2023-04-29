@@ -8,7 +8,6 @@ namespace SnakeGame;
 
 internal class Snake
 {
-
     private List<Block> parts = new List<Block>();
 
     public int Direction { get; set; }
@@ -60,7 +59,7 @@ internal class Snake
             {
                 newHead.Y++;
             }
-            parts.Insert(0,newHead);
+            parts.Insert(0, newHead);
 
             if (parts[0].Collision(food))
             {
@@ -73,7 +72,7 @@ internal class Snake
 
             if (parts[0].OutOfConsole)
             {
-                IsAlive = false;            
+                IsAlive = false;
             }
 
             for (int i = 1; i < parts.Count; i++)
@@ -83,7 +82,6 @@ internal class Snake
                     IsAlive = false;
                 }
             }
-
         }
     }
 
