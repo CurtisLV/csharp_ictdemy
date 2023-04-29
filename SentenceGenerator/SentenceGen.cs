@@ -12,7 +12,14 @@ internal class SentenceGen
     private string[] subjects = { "unicorn", "programmer", "manager", "hippopotamus", "T-rex" };
     private string[] adverbs = { "goes to", "likes to", "loves to", "learns to", "wants to" };
     private string[] verbs = { "sleep", "lay", "cook", "clean", "play" };
-    private string[] advPlace = {"on the table", "in the forest", "under the desk", "at grandma's", "at work"};
+    private string[] advPlace =
+    {
+        "on the table",
+        "in the forest",
+        "under the desk",
+        "at grandma's",
+        "at work"
+    };
 
     Random rand = new Random();
 
@@ -27,6 +34,4 @@ internal class SentenceGen
     {
         return $"{RandWord(attributes)} {RandWord(subjects)} {RandWord(adverbs)} {RandWord(verbs)} {RandWord(advPlace)}";
     }
-
-
 }
