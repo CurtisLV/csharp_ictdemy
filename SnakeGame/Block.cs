@@ -12,7 +12,10 @@ internal class Block
     public int Y { get; set; }
     public ConsoleColor Color { get; set; }
 
-    public bool OutOfConsole { get {
+    public bool OutOfConsole
+    {
+        get
+        {
             return (X >= Console.WindowWidth / 2 || Y >= Console.WindowHeight || X < 0 || Y < 0);
         }
     }
@@ -39,5 +42,4 @@ internal class Block
     {
         return (X == block.X && Y == block.Y);
     }
-
 }
