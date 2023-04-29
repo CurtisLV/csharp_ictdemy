@@ -8,8 +8,6 @@ namespace RadDegConverter;
 
 internal class Converter
 {
-
-
     static public double RadiansToDegrees(double rad)
     {
         // degrees = radians × 180° / π
@@ -17,17 +15,10 @@ internal class Converter
         return deg;
     }
 
-
     static public double DegreesToRadians(double deg)
     {
         // 1 rad = 180°/π = 57.295779513°
         double rad = deg / (180 / Math.PI);
         return rad;
     }
-
-
-
-
-
-
 }
