@@ -8,7 +8,6 @@ namespace ToolboxExercise;
 
 internal abstract class Tool
 {
-
     public int Weight { get; private set; }
     public string Name { get; private set; }
 
@@ -16,7 +15,7 @@ internal abstract class Tool
     {
         Weight = weight;
         Name = name;
-    }   
+    }
 
     public abstract void Work();
 
@@ -24,5 +23,4 @@ internal abstract class Tool
     {
         return Name;
     }
-
 }
