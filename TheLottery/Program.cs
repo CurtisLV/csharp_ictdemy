@@ -12,7 +12,7 @@ while (choice != '3')
     Console.WriteLine("3 - Quit");
 
     choice = Console.ReadKey().KeyChar;
-    
+
     Console.WriteLine();
 
     // react to choice
