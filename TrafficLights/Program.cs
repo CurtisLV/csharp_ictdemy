@@ -1,6 +1,5 @@
 ﻿using TrafficLights;
 
-
 TrafficLight trafficLight = new TrafficLight();
 trafficLight.Lights = ELights.Green;
 Car car = new Car();
