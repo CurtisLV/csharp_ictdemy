@@ -8,22 +8,24 @@ namespace TrafficLights;
 
 public enum ELights
 {
-    Green, Yellow, Red
+    Green,
+    Yellow,
+    Red
 }
 
 class TrafficLight
 {
-    public event EventHandler OnLightChange; 
+    public event EventHandler OnLightChange;
     private ELights lights;
-    public ELights Lights {
-        get {
-            return lights;
-        } 
-        set {
+    public ELights Lights
+    {
+        get { return lights; }
+        set
+        {
             lights = value;
             Console.WriteLine($"{lights} light");
             OnLightChangeEvent();
-        } 
+        }
     }
 
     public void OnLightChangeEvent()
@@ -34,4 +36,3 @@ class TrafficLight
         }
     }
 }
-
