@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace UserProcessingSystemEVENTS;
 
-namespace UserProcessingSystemEVENTS;
 internal class Database
 {
     public void SaveToDB(object sender, EventArgs e)
