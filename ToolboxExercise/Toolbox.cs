@@ -20,13 +20,13 @@ internal class Toolbox
         get { return tools.ToArray(); }
     }
 
-    public Toolbox(int maxWeight) 
+    public Toolbox(int maxWeight)
     {
         this.maxWeight = maxWeight;
         CurrentWeight = 1000;
     }
 
-    public bool AddTool(Tool tool) 
+    public bool AddTool(Tool tool)
     {
         // Cannot exceede max weight
         if (!(CurrentWeight + tool.Weight > maxWeight))
@@ -38,7 +38,7 @@ internal class Toolbox
         return false;
     }
 
-    public bool RemoveTool(Tool tool) 
+    public bool RemoveTool(Tool tool)
     {
         if (tools.Remove(tool))
         {
@@ -55,7 +55,7 @@ internal class Toolbox
         {
             if (tool is Hammer && ((Hammer)tool).IsTwoHanded)
             {
-                weight+= tool.Weight;
+                weight += tool.Weight;
             }
         }
         return weight;
@@ -69,5 +69,4 @@ internal class Toolbox
         }
         return "The box is empty.";
     }
-
 }
