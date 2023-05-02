@@ -37,7 +37,6 @@ foreach (Animal animal in animals)
     }
 }
 
-
 // type casting with As keyword
 // difference is that if the casting fails because the object doesn't provide the given interface, the result will be null
 
@@ -46,7 +45,7 @@ foreach (Animal animal in animals)
     animal.Breathe();
     if (animal is Dolphin)
     {
-        (animal as Dolphin).Jump();
+        ((Dolphin)animal).Jump();
     }
 }
 
@@ -60,8 +59,8 @@ foreach (Animal animal in animals)
     }
 }
 
-Lizard lizard = new Lizard() { Weight = 5};
-Bird bird4 = new Bird() { Weight = 1};
+Lizard lizard = new Lizard() { Weight = 5 };
+Bird bird4 = new Bird() { Weight = 1 };
 
 Dolphin dolphin3 = new Dolphin() { Weight = 10 };
 Console.WriteLine($"Interbreeding {lizard} and {bird4}");
