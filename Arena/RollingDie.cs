@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Arena;
+﻿namespace Arena;
 
 /// <summary>
 /// Class representing a die for a board game
