@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HelloW
+﻿namespace HelloW
 {
     /// <summary>
     /// A class represents a greeter whose purpose is to greet the user
